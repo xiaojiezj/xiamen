@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">
+  <defs>
+    <pattern id="waves" width="60" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0 15 Q15 5 30 15 T60 15" fill="none" stroke="#9cc9de" stroke-width="2"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- 陆地 -->
+  <rect width="1000" height="1500" fill="#fbf6e6"/>
+
+  <!-- 海：西侧鹭江 + 南侧 -->
+  <path id="sea" d="M0 130 L140 130 Q150 400 175 640 Q190 760 260 860 Q340 980 450 1060 Q560 1130 700 1150 Q850 1165 1000 1150 L1000 1500 L0 1500 Z" fill="#cfe7f2"/>
+  <path d="M0 130 L140 130 Q150 400 175 640 Q190 760 260 860 Q340 980 450 1060 Q560 1130 700 1150 Q850 1165 1000 1150 L1000 1500 L0 1500 Z" fill="url(#waves)" opacity="0.6"/>
+
+  <!-- 道路（灰） -->
+  <g fill="none" stroke="#d9cfae" stroke-linecap="round">
+    <!-- 鹭江道 / 演武路 沿海 -->
+    <path d="M160 140 Q170 400 195 640 Q210 760 280 850 Q360 960 465 1035 Q570 1105 700 1122 Q850 1138 1000 1125" stroke-width="14"/>
+    <!-- 中山路 -->
+    <path d="M168 330 L640 300" stroke-width="12"/>
+    <!-- 思明南路 -->
+    <path d="M600 300 Q590 600 520 800 Q490 900 470 1010" stroke-width="12"/>
+    <!-- 镇海路 -->
+    <path d="M200 690 L560 600" stroke-width="10"/>
+    <!-- 开禾路(八市) -->
+    <path d="M165 215 L460 200" stroke-width="8"/>
+  </g>
+  <g font-size="15" fill="#a8996c">
+    <text x="150" y="520" transform="rotate(-86 150 520)">鹭 江 道</text>
+    <text x="560" y="1100" transform="rotate(14 560 1100)">演 武 路</text>
+    <text x="230" y="318">中 山 路 步 行 街</text>
+    <text x="618" y="440" transform="rotate(95 618 440)">思 明 南 路</text>
+    <text x="330" y="642" transform="rotate(-14 330 642)">镇海路</text>
+    <text x="240" y="196">开禾路</text>
+  </g>
+
+  <!-- 演武大桥（海上） -->
+  <path d="M560 1150 Q700 1205 1000 1210" stroke="#b9c4cc" stroke-width="10" fill="none"/>
+  <text x="820" y="1240" font-size="15" fill="#7b97a6">演武大桥（海上高架）</text>
+
+  <!-- 海名 -->
+  <text x="40" y="560" font-size="28" fill="#5a9bb8" font-weight="600">鹭</text>
+  <text x="40" y="600" font-size="28" fill="#5a9bb8" font-weight="600">江</text>
+  <text x="14" y="190" font-size="14" fill="#5a9bb8">← 鼓浪屿（不去）</text>
+  <text x="60" y="1300" font-size="28" fill="#5a9bb8" font-weight="600">厦 门 港</text>
+  <text x="235" y="760" font-size="14" fill="#5a9bb8">⚓ 和平码头</text>
+
+  <!-- 地标 -->
+  <rect x="640" y="960" width="230" height="90" rx="14" fill="#efe6c8"/>
+  <text x="755" y="1012" font-size="22" fill="#a8996c" text-anchor="middle">厦门大学</text>
+  <text x="300" y="470" font-size="20" fill="#c5b88f">思明区老城</text>
+
+  <!-- 标题 -->
+  <rect x="0" y="0" width="1000" height="130" fill="#f2c53d"/>
+  <text x="40" y="62" font-size="40" font-weight="800" fill="#3b2f0b">Color Walk · 阳光黄组路线图</text>
+  <text x="40" y="104" font-size="22" fill="#5b4a12">15:30–18:00 · 厦门本岛 · 逍杰 / 小雅 / 奇儿 / 明城 / 寇森</text>
+  <g transform="translate(900 65)">
+    <circle r="40" fill="#fff3c4"/>
+    <text y="10" font-size="22" text-anchor="middle" font-weight="700" fill="#3b2f0b">N↑</text>
+  </g>
+
+  <!-- ===== 路线 ===== -->
+  <!-- ①→② 步行：沿鹭江道向北，再右转进中山路 -->
+  <path d="M205 680 Q185 500 178 335 L400 320" stroke="#e0a800" stroke-width="8" stroke-dasharray="4 12" stroke-linecap="round" fill="none"/>
+  <!-- ②→③ 打车：中山路东口 → 思明南路南行 → 沙坡尾 -->
+  <path d="M420 318 L600 306 Q590 600 520 800 Q492 900 455 1000" stroke="#e0a800" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- ③→④→⑤ 步行：沿演武路东行 -->
+  <path d="M455 1030 Q570 1100 640 1110 Q740 1125 820 1125" stroke="#e0a800" stroke-width="8" stroke-dasharray="4 12" stroke-linecap="round" fill="none"/>
+  <!-- 回程打车（细灰虚线） -->
+  <path d="M820 1140 Q600 1125 470 1050 Q330 950 250 830 Q215 760 212 710" stroke="#9aa5ad" stroke-width="3" stroke-dasharray="10 8" fill="none"/>
+
+  <!-- 路线标签 -->
+  <g filter="url(#shadow)">
+    <rect x="186" y="380" width="200" height="56" rx="14" fill="#fff"/>
+    <rect x="610" y="640" width="236" height="56" rx="14" fill="#fff"/>
+    <rect x="560" y="1050" width="200" height="0" rx="14" fill="#fff"/>
+  </g>
+  <text x="200" y="404" font-size="17" fill="#7a5b00" font-weight="700">🚶 步行 1.1km · 约 15′</text>
+  <text x="200" y="426" font-size="15" fill="#7a5b00">鹭江道北行→水仙路→中山路</text>
+  <text x="624" y="664" font-size="17" fill="#7a5b00" font-weight="700">🚕 打车 3.7km · 10–15′</text>
+  <text x="624" y="686" font-size="15" fill="#7a5b00">思明南路南行→演武路→大学路</text>
+
+  <!-- ① 酒店 -->
+  <circle cx="210" cy="695" r="28" fill="#e0a800" stroke="#fff" stroke-width="5"/>
+  <text x="210" y="705" font-size="26" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+  <g filter="url(#shadow)"><rect x="250" y="700" width="255" height="100" rx="14" fill="#fff"/></g>
+  <text x="265" y="732" font-size="21" font-weight="700" fill="#3b2f0b">🏨 瑞颐大酒店</text>
+  <text x="265" y="758" font-size="15" fill="#6b5a2a">鹭江道 12 号（近和平码头）</text>
+  <text x="265" y="784" font-size="15" fill="#c0392b" font-weight="700">15:20 大堂集合 / 15:30 出发</text>
+
+  <!-- 八市（可选） -->
+  <circle cx="420" cy="202" r="14" fill="#f5dd8a" stroke="#fff" stroke-width="3"/>
+  <text x="300" y="240" font-size="14" fill="#8a7a4a">↑ 八市（可选，北行 +5′）</text>
+
+  <!-- ② 中山路 -->
+  <circle cx="410" cy="320" r="28" fill="#e0a800" stroke="#fff" stroke-width="5"/>
+  <text x="410" y="330" font-size="26" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+  <g filter="url(#shadow)"><rect x="500" y="150" width="480" height="140" rx="14" fill="#fff"/></g>
+  <rect x="500" y="150" width="480" height="40" rx="14" fill="#fff3c4"/>
+  <text x="516" y="178" font-size="20" font-weight="700" fill="#3b2f0b">中山路步行街 / 局口街</text>
+  <text x="964" y="178" font-size="17" fill="#c0392b" font-weight="700" text-anchor="end">15:45–16:30</text>
+  <text x="516" y="214" font-size="16" fill="#3b2f0b">📷 黄色骑楼拱廊 · 老字号招牌 · 水果摊</text>
+  <text x="516" y="240" font-size="16" fill="#3b2f0b">🥣 黄则和花生汤（边吃边写点评）</text>
+  <text x="516" y="266" font-size="16" fill="#3b2f0b">🎬 走进骑楼 / 喝汤比👍　<tspan fill="#c0392b">⏰16:30 打车</tspan></text>
+
+  <!-- ③ 沙坡尾 -->
+  <circle cx="450" cy="1015" r="28" fill="#e0a800" stroke="#fff" stroke-width="5"/>
+  <text x="450" y="1025" font-size="26" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+  <g filter="url(#shadow)"><rect x="620" y="770" width="360" height="160" rx="14" fill="#fff"/></g>
+  <rect x="620" y="770" width="360" height="40" rx="14" fill="#fff3c4"/>
+  <text x="636" y="798" font-size="20" font-weight="700" fill="#3b2f0b">沙坡尾 · 艺术西区 · 避风坞</text>
+  <text x="636" y="834" font-size="16" fill="#c0392b" font-weight="700">16:45–17:05</text>
+  <text x="636" y="860" font-size="16" fill="#3b2f0b">📷 涂鸦墙 · 文创小物 · 渔船浮标</text>
+  <text x="636" y="886" font-size="16" fill="#3b2f0b">💎 隐藏宝藏：独立小店 / 老渔港</text>
+  <text x="636" y="912" font-size="15" fill="#c0392b" font-weight="700">⚠️ 17:05 必须出发去白城</text>
+  <line x1="620" y1="900" x2="478" y2="1005" stroke="#e6d39a" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- ④ 演武大桥观景平台 -->
+  <circle cx="640" cy="1110" r="22" fill="#f0c94a" stroke="#fff" stroke-width="4"/>
+  <text x="640" y="1118" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+
+  <!-- ⑤ 白城沙滩 -->
+  <circle cx="830" cy="1125" r="30" fill="#e0a800" stroke="#fff" stroke-width="5"/>
+  <text x="830" y="1135" font-size="28" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+
+  <!-- 步行标签 ③→⑤ -->
+  <g filter="url(#shadow)"><rect x="470" y="1150" width="250" height="56" rx="14" fill="#fff"/></g>
+  <text x="484" y="1174" font-size="17" fill="#7a5b00" font-weight="700">🚶 沿演武路向东 2.1km</text>
+  <text x="484" y="1196" font-size="15" fill="#7a5b00">途经④观景平台，约 25′</text>
+
+  <!-- ④ 卡片 -->
+  <g filter="url(#shadow)"><rect x="180" y="1150" width="270" height="70" rx="12" fill="#fff"/></g>
+  <text x="194" y="1178" font-size="17" font-weight="700" fill="#3b2f0b">④ 演武大桥观景平台</text>
+  <text x="194" y="1204" font-size="15" fill="#3b2f0b">📷 途经补拍（单车 / 黄色标线）</text>
+
+  <!-- ⑤ 卡片 -->
+  <circle cx="940" cy="1300" r="32" fill="#f6b73c" opacity="0.85"/>
+  <g filter="url(#shadow)"><rect x="500" y="1260" width="420" height="190" rx="14" fill="#fff"/></g>
+  <rect x="500" y="1260" width="420" height="40" rx="14" fill="#fff3c4"/>
+  <text x="516" y="1288" font-size="20" font-weight="700" fill="#3b2f0b">⑤ 白城沙滩</text>
+  <text x="904" y="1288" font-size="17" fill="#c0392b" font-weight="700" text-anchor="end">17:30–17:50</text>
+  <text x="516" y="1324" font-size="16" fill="#3b2f0b">📷 金色沙滩脚印 · 夕阳逆光</text>
+  <text x="516" y="1350" font-size="16" fill="#3b2f0b">📸 创意合影：躺拼「黄」字 / 托太阳</text>
+  <text x="516" y="1376" font-size="16" fill="#3b2f0b">🎬 视频结尾：全员跳起 + 夕阳剪影</text>
+  <text x="516" y="1404" font-size="16" fill="#c0392b" font-weight="700">🏁 17:50 剪视频 → 18:00 提交</text>
+  <text x="516" y="1432" font-size="14" fill="#7b8a93">🚕 回程：演武大桥→鹭江道打车回酒店 10–15′</text>
+
+  <!-- 图例 -->
+  <g filter="url(#shadow)"><rect x="680" y="350" width="290" height="250" rx="14" fill="#fff"/></g>
+  <text x="698" y="382" font-size="19" font-weight="700" fill="#3b2f0b">图例</text>
+  <line x1="698" y1="408" x2="750" y2="408" stroke="#e0a800" stroke-width="8" stroke-dasharray="4 12" stroke-linecap="round"/>
+  <text x="762" y="414" font-size="15" fill="#3b2f0b">步行</text>
+  <line x1="830" y1="408" x2="880" y2="408" stroke="#e0a800" stroke-width="8" stroke-linecap="round"/>
+  <text x="892" y="414" font-size="15" fill="#3b2f0b">打车</text>
+  <line x1="698" y1="436" x2="750" y2="436" stroke="#9aa5ad" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="762" y="442" font-size="15" fill="#3b2f0b">回程打车</text>
+  <text x="698" y="474" font-size="15" fill="#3b2f0b">📷 01 拍黄色（②③⑤ 各 3 张）</text>
+  <text x="698" y="500" font-size="15" fill="#3b2f0b">🥣 02 尝一口厦门</text>
+  <text x="698" y="526" font-size="15" fill="#3b2f0b">📸 03 创意小组照</text>
+  <text x="698" y="552" font-size="15" fill="#3b2f0b">💎 04 隐藏宝藏（选做）</text>
+  <text x="698" y="578" font-size="15" fill="#3b2f0b">🎬 05 15 秒视频（选做）</text>
+
+  <text x="30" y="1485" font-size="13" fill="#8aa9b8">示意图，非精确比例；具体导航以高德/百度地图为准</text>
+</svg>

@@ -1,0 +1,200 @@
+{
+ "zhongshan": {
+  "id": "B025003IUP",
+  "name": "中山路步行街",
+  "imgs": [
+   "zhongshan_1.jpg",
+   "zhongshan_4.jpg",
+   "zhongshan_5.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B025003IUP%2C24.455453%2C118.079259%2C%E4%B8%AD%E5%B1%B1%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E4%B8%AD%E5%B1%B1%E8%B7%AF56%E5%8F%B7",
+  "caps": {
+   "zhongshan_2.jpg": "中山路步行街",
+   "zhongshan_3.jpg": "厦门中山路海上骑楼复古民宿",
+   "zhongshan_4.jpg": "中山路",
+   "zhongshan_5.jpg": "中山路小吃街",
+   "zhongshan_6.jpg": "时光骑楼民宿(中山路步行街店)"
+  }
+ },
+ "huangzehe": {
+  "id": "B025003Z7S",
+  "name": "黄则和花生汤(中山路总店)",
+  "imgs": [
+   "huangzehe_1.jpg",
+   "huangzehe_4.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B025003Z7S%2C24.453358%2C118.076185%2C%E9%BB%84%E5%88%99%E5%92%8C%E8%8A%B1%E7%94%9F%E6%B1%A4(%E4%B8%AD%E5%B1%B1%E8%B7%AF%E6%80%BB%E5%BA%97)%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E4%B8%AD%E5%B1%B1%E8%B7%AF22-24%E5%8F%B7",
+  "caps": {
+   "huangzehe_2.jpg": "黄则和花生汤(中山路总店)",
+   "huangzehe_3.jpg": "黄则和(大同路店)",
+   "huangzehe_4.jpg": "黄则和(镇海店)",
+   "huangzehe_5.jpg": "黄则和·花生汤(后滨路店)",
+   "huangzehe_6.jpg": "黄则和(大生里店)"
+  }
+ },
+ "jukou": {
+  "id": "B025003ISD",
+  "name": "女人街(局口街)",
+  "imgs": [
+   "jukou_1.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B025003ISD%2C24.454091%2C118.080503%2C%E5%A5%B3%E4%BA%BA%E8%A1%97(%E5%B1%80%E5%8F%A3%E8%A1%97)%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E4%B8%AD%E5%B1%B1%E8%B7%AF%E4%B8%8E%E5%A4%AA%E5%B9%B3%E8%B7%AF%E4%BA%A4%E5%8F%89%E5%8F%A3%E8%A5%BF%E4%BE%A7"
+ },
+ "bashi": {
+  "id": "B0JG9C6ZWG",
+  "name": "第八市场(八市)",
+  "imgs": [
+   "bashi_1.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B0JG9C6ZWG%2C24.457902%2C118.075017%2C%E7%AC%AC%E5%85%AB%E5%B8%82%E5%9C%BA(%E5%85%AB%E5%B8%82)%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E5%BC%80%E7%A6%BE%E8%B7%AF44%E5%8F%B7"
+ },
+ "shapowei": {
+  "id": "B0FFF6YYVV",
+  "name": "沙坡尾艺术西区",
+  "imgs": [
+   "shapowei_1.jpg",
+   "shapowei_2.jpg",
+   "shapowei_3.jpg",
+   "shapowei_5.jpg",
+   "shapowei_6.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B0FFF6YYVV%2C24.437609%2C118.087587%2C%E6%B2%99%E5%9D%A1%E5%B0%BE%E8%89%BA%E6%9C%AF%E8%A5%BF%E5%8C%BA%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E6%B2%99%E5%9D%A1%E5%B0%BE60%E5%8F%B7",
+  "caps": {}
+ },
+ "bifengwu": {
+  "id": "B02500QDN3",
+  "name": "避风坞",
+  "imgs": [
+   "bifengwu_1.jpg",
+   "bifengwu_3.jpg",
+   "bifengwu_5.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B02500QDN3%2C24.439145%2C118.085565%2C%E9%81%BF%E9%A3%8E%E5%9D%9E%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA",
+  "caps": {
+   "bifengwu_2.jpg": "避风坞",
+   "bifengwu_3.jpg": "沙坡尾避风坞",
+   "bifengwu_4.jpg": "沙坡尾艺术西区",
+   "bifengwu_5.jpg": "沙坡尾",
+   "bifengwu_6.jpg": "阿信厚吐司(沙坡尾店)"
+  }
+ },
+ "yanwu": {
+  "id": "B0FFH1VLKT",
+  "name": "演武大桥观景平台",
+  "imgs": [
+   "yanwu_1.jpg",
+   "yanwu_3.jpg",
+   "yanwu_4.jpg",
+   "yanwu_5.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B0FFH1VLKT%2C24.433305%2C118.090262%2C%E6%BC%94%E6%AD%A6%E5%A4%A7%E6%A1%A5%E8%A7%82%E6%99%AF%E5%B9%B3%E5%8F%B0%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E6%BC%94%E6%AD%A6%E5%A4%A7%E6%A1%A5%E4%B8%8E%E6%BC%94%E6%AD%A6%E8%B7%AF%E4%BA%A4%E5%8F%89%E5%8F%A3%E8%A5%BF%E5%8D%97150%E7%B1%B3",
+  "caps": {
+   "yanwu_2.jpg": "演武大桥观景平台",
+   "yanwu_3.jpg": "演武大桥观景平台(3号口)",
+   "yanwu_4.jpg": "演武大桥",
+   "yanwu_5.jpg": "演武大桥",
+   "yanwu_6.jpg": "演武公园/演武大桥观景平台寄存点"
+  }
+ },
+ "baicheng": {
+  "id": "B0FFF0DUAW",
+  "name": "白城沙滩",
+  "imgs": [
+   "baicheng_1.jpg",
+   "baicheng_3.jpg",
+   "baicheng_4.jpg",
+   "baicheng_5.jpg",
+   "baicheng_6.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B0FFF0DUAW%2C24.432281%2C118.100875%2C%E7%99%BD%E5%9F%8E%E6%B2%99%E6%BB%A9%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E5%A4%A7%E5%AD%A6%E8%B7%AF",
+  "caps": {
+   "baicheng_2.jpg": "白城沙滩",
+   "baicheng_3.jpg": "厦大白城(厦大白城沙滩)(公交站)",
+   "baicheng_4.jpg": "环岛路海滩",
+   "baicheng_5.jpg": "厦门白城沙滩-露营地",
+   "baicheng_6.jpg": "环岛路木栈道"
+  }
+ },
+ "xmu_west": {
+  "id": "B025001G0C",
+  "name": "厦门大学思明校区(西门)",
+  "imgs": [
+   "xmu_west_1.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B025001G0C%2C24.437130%2C118.093510%2C%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6%E6%80%9D%E6%98%8E%E6%A0%A1%E5%8C%BA(%E8%A5%BF%E9%97%A8)%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E6%80%9D%E6%98%8E%E5%8D%97%E8%B7%AF422%E5%8F%B7%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6"
+ },
+ "qunxian": {
+  "id": "B0FFF2SRG2",
+  "name": "厦门大学思明校区群贤楼群",
+  "imgs": [
+   "qunxian_1.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B0FFF2SRG2%2C24.436677%2C118.095327%2C%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6%E6%80%9D%E6%98%8E%E6%A0%A1%E5%8C%BA%E7%BE%A4%E8%B4%A4%E6%A5%BC%E7%BE%A4%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E6%80%9D%E6%98%8E%E5%8D%97%E8%B7%AF422%E5%8F%B7",
+  "caps": {
+   "qunxian_2.jpg": "厦门大学思明校区群贤楼群"
+  }
+ },
+ "jiannan": {
+  "id": "B02500QJXK",
+  "name": "厦门大学思明校区建南大会堂",
+  "imgs": [
+   "jiannan_4.jpg",
+   "jiannan_5.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B02500QJXK%2C24.434409%2C118.097891%2C%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6%E6%80%9D%E6%98%8E%E6%A0%A1%E5%8C%BA%E5%BB%BA%E5%8D%97%E5%A4%A7%E4%BC%9A%E5%A0%82%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E6%80%9D%E6%98%8E%E5%8D%97%E8%B7%AF422%E5%8F%B7%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6"
+ },
+ "shangxian": {
+  "id": "B02500T58A",
+  "name": "厦门大学思明校区上弦场",
+  "imgs": [
+   "shangxian_1.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B02500T58A%2C24.433504%2C118.097814%2C%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6%E6%80%9D%E6%98%8E%E6%A0%A1%E5%8C%BA%E4%B8%8A%E5%BC%A6%E5%9C%BA%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E6%80%9D%E6%98%8E%E5%8D%97%E8%B7%AF422%E5%8F%B7(%E5%BB%BA%E5%8D%97%E5%A4%A7%E7%A4%BC%E5%A0%82)",
+  "caps": {
+   "shangxian_2.jpg": "厦门大学思明校区上弦场",
+   "shangxian_3.jpg": "厦门大学思明校区建南大会堂"
+  }
+ },
+ "furonghu": {
+  "id": "B0FFFYYHLI",
+  "name": "厦门大学芙蓉湖",
+  "imgs": [
+   "furonghu_1.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B0FFFYYHLI%2C24.436601%2C118.098698%2C%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6%E8%8A%99%E8%93%89%E6%B9%96%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA",
+  "caps": {
+   "furonghu_2.jpg": "厦门大学芙蓉湖",
+   "furonghu_3.jpg": "科艺咖啡厅"
+  }
+ },
+ "furongsd": {
+  "id": "B0FFH7U2NV",
+  "name": "芙蓉隧道",
+  "imgs": [
+   "furongsd_4.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B0FFH7U2NV%2C24.435716%2C118.104543%2C%E8%8A%99%E8%93%89%E9%9A%A7%E9%81%93%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E6%80%9D%E6%98%8E%E5%8D%97%E8%B7%AF422%E5%8F%B7",
+  "caps": {
+   "furongsd_2.jpg": "芙蓉隧道",
+   "furongsd_3.jpg": "瑞幸咖啡(厦门大学芙蓉隧道店)",
+   "furongsd_4.jpg": "厦门大学芙蓉惜夕湾隧道咖啡厅",
+   "furongsd_5.jpg": "公共厕所"
+  }
+ },
+ "baichengmen": {
+  "id": "B02500QG91",
+  "name": "厦门大学思明校区(白城校门)",
+  "imgs": [
+   "baichengmen_1.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B02500QG91%2C24.433194%2C118.102104%2C%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6%E6%80%9D%E6%98%8E%E6%A0%A1%E5%8C%BA(%E7%99%BD%E5%9F%8E%E6%A0%A1%E9%97%A8)%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E6%80%9D%E6%98%8E%E5%8D%97%E8%B7%AF422%E5%8F%B7"
+ },
+ "hotel": {
+  "id": "B02500QI0P",
+  "name": "厦门瑞颐大酒店",
+  "imgs": [
+   "hotel_1.jpg"
+  ],
+  "share": "http://wb.amap.com/?p=B02500QI0P%2C24.449898%2C118.079152%2C%E5%8E%A6%E9%97%A8%E7%91%9E%E9%A2%90%E5%A4%A7%E9%85%92%E5%BA%97%2C%E5%8E%A6%E9%97%A8%E5%B8%82%E6%80%9D%E6%98%8E%E5%8C%BA%E9%B9%AD%E6%B1%9F%E9%81%9312%E5%8F%B7(%E9%95%87%E6%B5%B7%E8%B7%AF%E5%9C%B0%E9%93%81%E7%AB%991%E5%8F%B7%E5%8F%A3%E6%AD%A5%E8%A1%8C360%E7%B1%B3)"
+ }
+}
