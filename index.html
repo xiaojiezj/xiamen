@@ -3,246 +3,269 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f2c53d">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <title>厦门 Color Walk · 阳光黄组</title>
-<meta name="description" content="厦门团建 Color Walk 阳光黄组路线、地图与拍照攻略">
 <style>
-:root{--y:#f2c53d;--y2:#fff3c4;--y3:#e0a800;--ink:#3b2f0b;--sub:#7a6a3a;--red:#c0392b;--blue:#2979ff;--bg:#fbf6e6;--card:#fff;--r:16px}
-*{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-a{color:#b07a00}
-header{background:var(--y);padding:28px 20px 18px}
-header h1{margin:0;font-size:28px;letter-spacing:.5px}
-header p{margin:6px 0 0;color:#5b4a12}
-.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.chip{background:#fff8dc;border-radius:999px;padding:4px 12px;font-size:13px}
-nav.tabs{position:sticky;top:0;z-index:20;background:var(--bg);display:flex;gap:8px;padding:10px 16px;border-bottom:1px solid #eadfb8;overflow-x:auto}
-nav.tabs button{flex:0 0 auto;border:0;border-radius:999px;padding:9px 16px;font-size:15px;font-weight:700;background:#fff;color:var(--ink);cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-nav.tabs button.on{background:var(--ink);color:#fff}
-nav.sub{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
-nav.sub a{font-size:13px;background:#fff;border-radius:999px;padding:4px 12px;text-decoration:none;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.06)}
-main{max-width:1100px;margin:0 auto;padding:16px}
-section.plan{display:none}section.plan.on{display:block}
-h2{font-size:22px;margin:28px 0 12px;padding-left:10px;border-left:6px solid var(--y3)}
-h3{font-size:18px;margin:18px 0 8px}
-.card{background:var(--card);border-radius:var(--r);padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.06);margin-bottom:14px}
-.banner{background:var(--y2);border:1px dashed var(--y3);border-radius:var(--r);padding:12px 16px;margin:12px 0}
-.warn{background:#fdecea;border-color:#e57373}
-.maps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
-.maps figure{margin:0;background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)}
-.maps img{width:100%;display:block;cursor:zoom-in}
-.maps figcaption{padding:10px 14px;font-size:14px;color:var(--sub)}
-.maps figcaption b{color:var(--ink)}
-table{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border-radius:12px;overflow:hidden}
-th,td{padding:9px 10px;border-bottom:1px solid #f0e6c8;text-align:left;vertical-align:top}
-th{background:var(--y2);white-space:nowrap}
-.tw{overflow-x:auto;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.06);margin-bottom:14px}
-.spot{background:#fff;border-radius:var(--r);box-shadow:0 2px 10px rgba(0,0,0,.06);margin-bottom:18px;overflow:hidden}
-.spot-h{display:flex;gap:12px;align-items:center;padding:14px 16px 6px}
-.no{flex:0 0 40px;height:40px;border-radius:50%;background:var(--y3);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+:root{--y:#f2c53d;--y2:#fff3c4;--y3:#e0a800;--ink:#3b2f0b;--sub:#8a7a4a;--red:#c0392b;--blue:#1d4ed8;--bg:#fbf6e6;--line:#efe4c2;--tab:64px}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB",sans-serif;background:#e9e2cc;color:var(--ink);line-height:1.55;font-size:15px}
+.app{max-width:480px;margin:0 auto;min-height:100vh;background:var(--bg);position:relative;padding-bottom:calc(var(--tab) + env(safe-area-inset-bottom) + 12px)}
+a{color:inherit;text-decoration:none}
+
+/* 顶部 */
+.hero{background:var(--y);padding:calc(18px + env(safe-area-inset-top)) 18px 16px}
+.hero h1{margin:0;font-size:22px}
+.hero .s{font-size:13px;color:#5b4a12;margin-top:2px}
+.hero .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.chip{font-size:12px;background:rgba(255,255,255,.6);border-radius:999px;padding:3px 10px}
+
+/* 分段控件 */
+.seg{position:sticky;top:0;z-index:10;background:var(--bg);padding:10px 14px;border-bottom:1px solid var(--line)}
+.seg .in{display:flex;background:#efe6c8;border-radius:12px;padding:3px}
+.seg button{flex:1;border:0;background:transparent;font-size:14px;font-weight:700;color:var(--sub);padding:8px 0;border-radius:10px}
+.seg button.on{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.1)}
+.pane{display:none;padding:14px}
+.pane.on{display:block}
+
+/* 通用 */
+.note{border-radius:14px;padding:11px 13px;font-size:14px;margin-bottom:12px}
+.note.y{background:var(--y2)}
+.note.r{background:#fdecea;color:#7a1f16}
+.h{font-size:17px;font-weight:800;margin:18px 2px 10px;display:flex;align-items:center;gap:6px}
+.card{background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,.05);margin-bottom:12px;overflow:hidden}
+.pad{padding:13px 14px}
+
+/* 地图 */
+.map img{width:100%;display:block}
+.map .cap{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;font-size:13px}
+.map .cap b{font-size:15px}
+.map .cap span{color:var(--sub)}
+.zoom{font-size:12px;font-weight:700;background:var(--y2);border-radius:999px;padding:4px 10px;white-space:nowrap}
+
+/* 路段 */
+.leg{display:flex;gap:12px;padding:13px 14px;border-bottom:1px solid var(--line)}
+.leg:last-child{border-bottom:0}
+.leg .ic{flex:0 0 38px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:19px;background:#fff1d6}
+.leg .ic.car{background:#e3eeff}
+.leg .t{font-weight:800;font-size:15px}
+.leg .d{font-size:13px;color:var(--sub);margin:1px 0 4px}
+.leg .r{font-size:14px}
+.leg .r b{background:var(--y2);border-radius:4px;padding:0 3px;font-weight:700}
+
+/* 时间轴 */
+.tl{position:relative;padding:4px 0 4px 0}
+.tl .it{display:flex;gap:12px;position:relative;padding-bottom:14px}
+.tl .it:before{content:"";position:absolute;left:47px;top:22px;bottom:-2px;width:2px;background:#e8d9a6}
+.tl .it:last-child:before{display:none}
+.tl .tm{flex:0 0 40px;font-size:12px;font-weight:800;color:var(--red);text-align:right;padding-top:2px;line-height:1.25}
+.tl .dot{flex:0 0 12px;height:12px;border-radius:50%;background:var(--y3);margin-top:5px;border:2px solid #fff;box-shadow:0 0 0 2px var(--y3);z-index:1}
+.tl .dot.mv{background:#fff}
+.tl .bd{flex:1;min-width:0;background:#fff;border-radius:12px;padding:9px 12px;box-shadow:0 1px 5px rgba(0,0,0,.05)}
+.tl .bd b{display:block;font-size:14px}
+.tl .bd span{font-size:13px;color:var(--sub)}
+.tl .bd.mv{background:transparent;box-shadow:none;padding:4px 2px}
+
+/* 拍照点 */
+.chips2{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:none;margin:0 -14px;padding-left:14px;padding-right:14px}
+.chips2::-webkit-scrollbar{display:none}
+.chips2 a{flex:0 0 auto;font-size:13px;font-weight:700;background:#fff;border-radius:999px;padding:6px 12px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.spot .top{display:flex;gap:10px;align-items:center;padding:13px 14px 8px}
+.no{flex:0 0 34px;height:34px;border-radius:50%;background:var(--y3);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px}
 .no.sub{background:#d65a3c}
-.spot-h h3{margin:0;font-size:18px}
-.spot-h .t{font-size:13px;color:var(--red);font-weight:700}
-.spot-b{padding:4px 16px 14px}
-.kv{display:grid;grid-template-columns:72px 1fr;gap:4px 10px;font-size:14px;margin:6px 0 10px}
-.kv dt{color:var(--sub)}.kv dd{margin:0}
-.btns{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
-.btn{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:700;text-decoration:none;border-radius:999px;padding:6px 12px;background:var(--y2);color:var(--ink)}
-.btn.blue{background:#e3eeff;color:#1d4ed8}.btn.red{background:#ffe4e1;color:#c0392b}
-.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
-.gal figure{margin:0;position:relative;border-radius:10px;overflow:hidden;background:#eee;aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in}
-.gal figcaption{position:absolute;left:0;right:0;bottom:0;font-size:11px;color:#fff;padding:14px 6px 4px;background:linear-gradient(transparent,rgba(0,0,0,.65))}
-.tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:6px;background:#eee;color:#555;margin-left:4px}
-.tag.ai{background:#efe3ff;color:#6b21a8}
-.shot{background:#fffbea;border-radius:10px;padding:10px 12px;font-size:14px;margin:8px 0}
-.shot li{margin:2px 0}
-ul.clean{padding-left:18px;margin:6px 0}
-.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
-footer{padding:30px 16px 50px;text-align:center;color:var(--sub);font-size:13px}
-#lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:99;flex-direction:column}
+.spot h3{margin:0;font-size:16px}
+.spot .when{font-size:12px;color:var(--red);font-weight:700}
+.sw{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 14px 4px;scrollbar-width:none}
+.sw::-webkit-scrollbar{display:none}
+.sw figure{flex:0 0 72%;margin:0;scroll-snap-align:start;position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/5;background:#eee}
+.sw figure.one{flex-basis:100%}
+.sw img{width:100%;height:100%;object-fit:cover;display:block}
+.sw figcaption{position:absolute;left:8px;top:8px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:rgba(0,0,0,.55);color:#fff}
+.sw figcaption.ai{background:rgba(107,33,168,.85)}
+.cnt{font-size:11px;color:var(--sub);padding:4px 14px 0}
+.info{padding:8px 14px 4px;font-size:14px}
+.info .row{display:flex;gap:8px;margin:4px 0}
+.info .k{flex:0 0 48px;color:var(--sub);font-size:13px}
+.info .v{flex:1;min-width:0}
+.how{margin:8px 14px;background:#fffbea;border-radius:12px;padding:9px 12px;font-size:14px}
+.how ol{margin:4px 0 0;padding-left:18px}
+.acts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:6px 14px 14px}
+.acts a{text-align:center;font-size:13px;font-weight:700;border-radius:12px;padding:10px 0;background:var(--y2)}
+.acts a.b{background:#e3eeff;color:var(--blue)}
+.acts a.x{background:#ffe4e1;color:var(--red)}
+
+/* 任务 */
+.task .pad b{font-size:15px}
+.task .pad p{margin:4px 0 0;font-size:14px}
+.badge{display:inline-block;font-size:11px;font-weight:800;border-radius:6px;padding:1px 6px;margin-right:6px;background:var(--y3);color:#fff}
+.badge.o{background:#9bb07a}
+.mem{display:flex;justify-content:space-between;padding:11px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.mem:last-child{border-bottom:0}
+.mem span{color:var(--sub);font-size:13px;text-align:right}
+.chk label{display:flex;gap:10px;align-items:center;padding:11px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.chk input{width:20px;height:20px;accent-color:var(--y3)}
+
+/* 底部 Tab */
+.tabbar{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom)}
+.tabbar button{flex:1;border:0;background:none;height:var(--tab);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:11px;color:#a59870;font-weight:700}
+.tabbar button i{font-style:normal;font-size:21px;filter:grayscale(1);opacity:.6}
+.tabbar button.on{color:var(--ink)}
+.tabbar button.on i{filter:none;opacity:1}
+.view{display:none}.view.on{display:block}
+
+/* 大图查看 */
+#lb{position:fixed;inset:0;background:#000;z-index:50;display:none;flex-direction:column}
 #lb.on{display:flex}
-#lb img{max-width:96vw;max-height:86vh;object-fit:contain}
-#lb p{color:#ddd;font-size:13px;margin:8px 12px;text-align:center}
-#lb .x{position:absolute;top:10px;right:16px;color:#fff;font-size:34px;cursor:pointer}
-.legend{font-size:12px;color:var(--sub);margin:4px 0 12px}
+#lb .bar{display:flex;justify-content:space-between;align-items:center;color:#fff;padding:calc(10px + env(safe-area-inset-top)) 14px 10px;font-size:13px}
+#lb .bar button{background:rgba(255,255,255,.15);color:#fff;border:0;border-radius:999px;padding:6px 14px;font-size:14px}
+#lb .sc{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;display:flex;align-items:center;justify-content:center}
+#lb .sc img{max-width:100%;max-height:100%;object-fit:contain}
+#lb.big .sc{display:block}
+#lb.big .sc img{max-width:none;max-height:none;width:250%}
+#lb .tip{color:#aaa;font-size:12px;text-align:center;padding:8px 0 calc(10px + env(safe-area-inset-bottom))}
+footer{font-size:11px;color:var(--sub);text-align:center;padding:16px 18px 4px}
 </style>
 </head>
 <body>
-<header>
-  <h1>Color Walk · 阳光黄组 ☀️</h1>
-  <p>厦门团建分组活动 · 15:30–18:00 · 厦门本岛（不去鼓浪屿）</p>
-  <div class="meta">
-    <span class="chip">👥 逍杰（组长）· 小雅 · 奇儿 · 明城 · 寇森</span>
-    <span class="chip">🏨 出发：厦门瑞颐大酒店（鹭江道 12 号）</span>
-    <span class="chip">✅ 3 项必做 + 2 项选做</span>
+<div class="app">
+  <div class="hero">
+    <h1>Color Walk · 阳光黄组 ☀️</h1>
+    <div class="s">厦门团建 · 15:30–18:00 · 厦门本岛</div>
+    <div class="chips"><span class="chip">👥 逍杰 · 小雅 · 奇儿 · 明城 · 寇森</span><span class="chip">🏨 瑞颐大酒店出发</span></div>
   </div>
-</header>
 
-<nav class="tabs" id="tabs">
-  <button data-t="p1" class="on">方案一 · 沙坡尾（主）</button>
-  <button data-t="p2">方案二 · 厦大（备选）</button>
-  <button data-t="task">任务 & 分工</button>
+  <div class="view on" id="v-p1"></div>
+  <div class="view" id="v-p2"></div>
+  <div class="view" id="v-task"></div>
+
+  <footer>底图 © 高德地图 · 实拍参考来自高德 POI / 用户点评，版权归原作者<br>紫色标签「AI 构图示意」为 AI 生成，仅示范机位</footer>
+</div>
+
+<nav class="tabbar">
+  <button data-v="p1" class="on"><i>🎨</i>方案一·沙坡尾</button>
+  <button data-v="p2"><i>🏫</i>方案二·厦大</button>
+  <button data-v="task"><i>✅</i>任务分工</button>
 </nav>
 
-<main>
-<section class="plan on" id="p1"></section>
-<section class="plan" id="p2"></section>
-
-<section class="plan" id="task">
-  <h2>五项任务怎么完成</h2>
-  <div class="grid2">
-    <div class="card"><h3>01 必做 · 寻找你的颜色</h3>3 个场景各拍 3 张黄色，共 9 张（统一竖图，最后拼九宫格）。黄色占画面 ≥ 1/3。<br><b>方案一：</b>中山路 3 + 沙坡尾 3 + 白城 3（观景平台补拍）<br><b>方案二：</b>中山路 3 + 厦大 3 + 白城 3</div>
-    <div class="card"><h3>02 必做 · 尝一口厦门</h3><b>黄则和花生汤（中山路总店）</b>：店名带「黄」，梗足。<br>点评模板：【黄则和花生汤】⭐⭐⭐⭐☆ 颜值 / 口感 / 一句话评价 / 适合人群。边吃边写。</div>
-    <div class="card"><h3>03 必做 · 我们的厦门时刻</h3>白城沙滩 17:30 后：①5 人躺拼「黄」字俯拍 ②借位托住夕阳 ③沙上写「阳光黄 ☀️」脚丫入镜 ④全员黄色单品同框起跳。路上先定 1 主 1 备。</div>
-    <div class="card"><h3>04 选做 · 发现隐藏宝藏</h3>方案一：沙坡尾艺术西区独立小店 / 避风坞老渔港。方案二：中山路背后的局口街老巷。提交：照片 1–2 张 + 3 句推荐理由。</div>
-    <div class="card"><h3>05 选做 · 15 秒厦门</h3>0–3s 鹭江道→骑楼 · 3–6s 喝花生汤比赞 · 6–9s 涂鸦墙/隧道转场 · 9–12s 黄色快闪 · 12–15s 沙滩起跳 + 字幕「阳光黄 ☀️」。剪映模板提前选好，17:50 开剪。</div>
-  </div>
-  <h2>分工</h2>
-  <div class="tw"><table>
-    <tr><th>成员</th><th>角色</th><th>职责</th></tr>
-    <tr><td>逍杰（组长）</td><td>统筹 + 计时</td><td>控节奏、带路、最后汇总提交</td></tr>
-    <tr><td>小雅</td><td>摄影 A</td><td>任务 01 九宫格照片</td></tr>
-    <tr><td>奇儿</td><td>美食官</td><td>任务 02 点单、写点评</td></tr>
-    <tr><td>明城</td><td>摄影 B / 剪辑</td><td>任务 05 视频素材与剪辑</td></tr>
-    <tr><td>寇森</td><td>探店官</td><td>任务 04 隐藏宝藏 + 任务 03 合影构图</td></tr>
-  </table></div>
-  <h2>提交清单 & 注意事项</h2>
-  <div class="grid2">
-    <div class="card"><ul class="clean"><li>☐ 01：9 张黄色照片（九宫格）</li><li>☐ 02：美食照片 + 点评</li><li>☐ 03：创意小组照</li><li>☐ 04：隐藏宝藏照片 + 推荐理由</li><li>☐ 05：15 秒视频</li></ul></div>
-    <div class="card"><ul class="clean"><li>每人带 1 件黄色单品（帽子 / 衣服 / 饮料）</li><li>防晒、水、充电宝；建共享相册实时上传</li><li>下雨：中山路骑楼有廊可避雨，沙滩合影改骑楼下</li><li>沙滩不下深水，注意涨潮</li><li>行李可先寄存酒店前台</li></ul></div>
-  </div>
-</section>
-</main>
-
-<footer>
-  地图底图 © 高德地图 · 路线由 OSM 路网规划 · 参考实拍图来自高德地图 POI / 用户点评，版权归原作者 · 标注 <span class="tag ai">AI 构图示意</span> 的为 AI 生成，非实拍<br>
-  导航以高德 App 实时路况为准
-</footer>
-
-<div id="lb"><span class="x">×</span><img alt=""><p></p></div>
+<div id="lb"><div class="bar"><span class="t"></span><button class="z">放大</button><button class="c">关闭</button></div><div class="sc"><img alt=""></div><div class="tip">双指缩放 / 点「放大」后拖动查看</div></div>
 
 <script>
-const A='assets/spots/', C='assets/compose/';
-const amap=(n,lng,lat)=>`https://uri.amap.com/marker?position=${lng},${lat}&name=${encodeURIComponent(n)}&coordinate=gaode&callnative=1`;
-const nav=(n,lng,lat,mode)=>`https://uri.amap.com/navigation?to=${lng},${lat},${encodeURIComponent(n)}&mode=${mode||'walk'}&coordinate=gaode&callnative=1`;
+const A='assets/spots/',C='assets/compose/';
+const amap=(n,g,t)=>`https://uri.amap.com/marker?position=${g},${t}&name=${encodeURIComponent(n)}&coordinate=gaode&callnative=1`;
+const nav=(n,g,t)=>`https://uri.amap.com/navigation?to=${g},${t},${encodeURIComponent(n)}&mode=walk&coordinate=gaode&callnative=1`;
 const xhs=q=>`https://www.xiaohongshu.com/search_result?keyword=${encodeURIComponent(q)}`;
-const dp=q=>`https://www.dianping.com/search/keyword/15/0_${encodeURIComponent(q)}`;
 
 const SP={
- zhongshan:{n:'中山路骑楼（中山路步行街）',poi:'中山路步行街',lng:118.079259,lat:24.455453,addr:'中山路 56 号一带（西口靠鹭江道）',
-  what:'米黄色南洋骑楼外立面、连续拱廊、老字号黄底招牌',
-  how:['站在街道中央，<b>低机位仰拍</b>拱廊，拍出纵深透视','5 人背影走进骑楼 → 视频开头','黄色外墙占画面 ≥ 1/3，统一竖图'],
-  imgs:['zhongshan_1','zhongshan_4','zhongshan_5'],ai:['qilou'],xhs:'厦门中山路骑楼 拍照机位'},
- huangzehe:{n:'黄则和花生汤（中山路总店）',poi:'黄则和花生汤(中山路总店)',lng:118.076185,lat:24.453358,addr:'中山路 22–24 号（中山路西口）',
-  what:'花生汤（汤色偏黄）+ 店名里的「黄」字招牌',
-  how:['碗放中心，<b>45° 斜拍 + 手拿勺入镜</b>','门头招牌正面平拍，留出「黄」字','一人喝一口比 👍 → 视频素材'],
-  imgs:['huangzehe_1','huangzehe_4'],xhs:'黄则和花生汤 中山路总店'},
- jukou:{n:'局口街 / 女人街（老街巷）',poi:'女人街(局口街)',lng:118.080503,lat:24.454091,addr:'中山路与太平路交叉口西侧',
-  what:'窄巷骑楼、老招牌、小店（隐藏宝藏候选）',
-  how:['巷口<b>框景构图</b>：用两侧骑楼做画框','找黄色招牌 / 黄色灯笼特写'],
-  imgs:['jukou_1'],xhs:'厦门局口街 拍照'},
- bashi:{n:'第八市场（八市，可选）',poi:'第八市场(八市)',lng:118.075017,lat:24.457902,addr:'开禾路 44 号',
-  what:'水果摊上堆满的芒果 / 菠萝 / 香蕉',
-  how:['<b>俯拍让水果铺满画面</b>，黄色最饱和','往返 +5 分钟，时间紧就跳过'],
-  imgs:['bashi_1'],xhs:'厦门八市 拍照'},
- shapowei:{n:'沙坡尾艺术西区',poi:'沙坡尾艺术西区',lng:118.087587,lat:24.437609,addr:'沙坡尾 60 号',
-  what:'涂鸦墙、艺术西区黑框门头、文创小店黄色小物',
-  how:['人站画面一侧 1/3，<b>涂鸦墙占 2/3</b>','文创小物（明信片 / 帆布包）<b>微距特写</b>','涂鸦墙前每人一个手势快速转场 → 视频'],
-  imgs:['shapowei_1','shapowei_5','shapowei_6','shapowei_2','shapowei_3'],ai:['graffiti'],xhs:'沙坡尾 涂鸦墙 拍照机位'},
- bifengwu:{n:'沙坡尾避风坞',poi:'避风坞',lng:118.085565,lat:24.439145,addr:'沙坡尾（艺术西区西侧水湾）',
-  what:'渔船、黄色浮标 / 救生圈、彩色老房子倒影',
-  how:['从岸边拍，<b>水面做前景</b>','找渔船上的黄色浮标做主体'],
-  imgs:['bifengwu_1','bifengwu_3','bifengwu_5'],xhs:'沙坡尾避风坞 拍照'},
- yanwu:{n:'演武大桥观景平台',poi:'演武大桥观景平台',lng:118.090262,lat:24.433305,addr:'演武大桥与演武路交叉口西南 150 米',
-  what:'海上栈道、演武大桥、世茂双子塔',
-  how:['用栈道 / 栏杆做<b>引导线</b>','途经补拍：黄色单车 / 交通标线','顺手拍一段海边走路视频'],
-  imgs:['yanwu_1','yanwu_3','yanwu_4','yanwu_5'],xhs:'演武大桥观景平台 拍照'},
- baicheng:{n:'白城沙滩',poi:'白城沙滩',lng:118.100875,lat:24.432281,addr:'大学路（厦大白城校门对面）',
-  what:'金色沙滩、脚印、夕阳、全员合影 & 视频结尾',
-  how:['脚印：<b>贴地低角度</b>','夕阳：<b>逆光拍剪影</b>','合影：一人站高处俯拍 5 人躺拼「黄」字','视频：5 人同时起跳，连拍 / 慢动作'],
-  imgs:['baicheng_1','baicheng_3','baicheng_4','baicheng_6','baicheng_5'],ai:['beach','jump'],xhs:'厦门白城沙滩 拍照 合影'},
- xmu_west:{n:'厦门大学思明校区（西门）',poi:'厦门大学思明校区(西门)',lng:118.093510,lat:24.437130,addr:'思明南路 422 号（思明南路尽头）',
-  what:'入校点（核验预约 + 身份证）',how:['校门口合影可作备用'],imgs:['xmu_west_1'],xhs:'厦门大学 预约 入校'},
- qunxian:{n:'群贤楼群',poi:'厦门大学思明校区群贤楼群',lng:118.095327,lat:24.436677,addr:'厦大思明校区西侧',
-  what:'嘉庚风格老建筑（红砖 + 绿瓦 + 拱廊）',how:['拱廊纵深 + 对称构图','找黄色窗框 / 灯 / 标识'],imgs:['qunxian_1'],xhs:'厦大 群贤楼 拍照'},
- jiannan:{n:'建南大会堂 · 上弦场',poi:'厦门大学思明校区建南大会堂',lng:118.097891,lat:24.434409,addr:'厦大思明校区南侧（面朝大海）',
-  what:'看台 + 大会堂 + 远处大海',how:['站在上弦场看台高处，<b>大会堂做背景</b>','合影备选机位（全员坐看台）'],imgs:['jiannan_4','jiannan_5','shangxian_1'],xhs:'厦大 上弦场 建南大会堂 拍照'},
- furonghu:{n:'芙蓉湖',poi:'厦门大学芙蓉湖',lng:118.098698,lat:24.436601,addr:'厦大思明校区中部',
-  what:'湖景、黑天鹅、湖边黄花 / 共享单车',how:['湖面倒影 + 对岸建筑','找湖边黄色元素做前景'],imgs:['furonghu_1'],xhs:'厦大芙蓉湖 拍照'},
- furongsd:{n:'芙蓉隧道',poi:'芙蓉隧道',lng:118.101875,lat:24.435275,addr:'厦大芙蓉区（西口近芙蓉路）',
-  what:'隧道两侧学生手绘涂鸦（找黄色主题）',how:['黄色涂鸦做<b>前景</b>，隧道纵深做背景','5 人走进隧道背影 → 视频素材'],imgs:['furongsd_4'],ai:['tunnel'],xhs:'厦大芙蓉隧道 涂鸦 拍照'},
- baichengmen:{n:'厦门大学白城校门',poi:'厦门大学思明校区(白城校门)',lng:118.102104,lat:24.433194,addr:'大学路（出门过马路即白城沙滩）',
-  what:'出校点',how:['出门过大学路约 150 米到沙滩'],imgs:['baichengmen_1'],xhs:'厦大白城校门'},
+ zhongshan:{n:'中山路骑楼',poi:'中山路步行街',g:118.079259,t:24.455453,addr:'中山路 56 号一带，西口靠鹭江道',what:'米黄色南洋骑楼、连续拱廊、老字号招牌',how:['站街道中央<b>低机位仰拍</b>拱廊，拍出纵深','5 人背影走进骑楼 → 视频开头','黄色外墙占画面 ≥ 1/3'],imgs:['zhongshan_1','zhongshan_4','zhongshan_5'],ai:['qilou'],q:'厦门中山路骑楼 拍照机位'},
+ huangzehe:{n:'黄则和花生汤',poi:'黄则和花生汤(中山路总店)',g:118.076185,t:24.453358,addr:'中山路 22–24 号（中山路西口）',what:'花生汤 + 带「黄」字的招牌',how:['碗放中心，<b>45° 斜拍 + 手拿勺入镜</b>','门头招牌正面平拍','喝一口比 👍 → 视频素材'],imgs:['huangzehe_1','huangzehe_4'],q:'黄则和花生汤 中山路总店'},
+ jukou:{n:'局口街 · 女人街',poi:'女人街(局口街)',g:118.080503,t:24.454091,addr:'中山路与太平路交叉口西侧',what:'窄巷骑楼、老招牌、小店（隐藏宝藏候选）',how:['巷口<b>框景</b>：两侧骑楼做画框','黄色招牌 / 灯笼特写'],imgs:['jukou_1'],q:'厦门局口街 拍照'},
+ bashi:{n:'第八市场（可选）',poi:'第八市场(八市)',g:118.075017,t:24.457902,addr:'开禾路 44 号',what:'水果摊上的芒果 / 菠萝 / 香蕉',how:['<b>俯拍让水果铺满画面</b>','往返 +5 分钟，赶时间就跳过'],imgs:['bashi_1'],q:'厦门八市 拍照'},
+ shapowei:{n:'沙坡尾艺术西区',poi:'沙坡尾艺术西区',g:118.087587,t:24.437609,addr:'沙坡尾 60 号',what:'涂鸦墙、艺术西区门头、文创小物',how:['人站一侧 1/3，<b>涂鸦墙占 2/3</b>','文创小物<b>微距特写</b>','涂鸦墙前每人一个手势 → 视频转场'],imgs:['shapowei_1','shapowei_5','shapowei_6','shapowei_2','shapowei_3'],ai:['graffiti'],q:'沙坡尾 涂鸦墙 拍照机位'},
+ bifengwu:{n:'沙坡尾避风坞',poi:'避风坞',g:118.085565,t:24.439145,addr:'沙坡尾艺术西区西侧水湾',what:'渔船、黄色浮标、老房子倒影',how:['岸边拍，<b>水面做前景</b>','渔船上的黄色浮标做主体'],imgs:['bifengwu_1','bifengwu_3','bifengwu_5'],q:'沙坡尾避风坞 拍照'},
+ yanwu:{n:'演武大桥观景平台',poi:'演武大桥观景平台',g:118.090262,t:24.433305,addr:'演武大桥与演武路交叉口西南 150 米',what:'海上栈道、演武大桥、双子塔',how:['栈道栏杆做<b>引导线</b>','补拍黄色单车 / 标线','拍一段海边走路视频'],imgs:['yanwu_1','yanwu_3','yanwu_4','yanwu_5'],q:'演武大桥观景平台 拍照'},
+ baicheng:{n:'白城沙滩',poi:'白城沙滩',g:118.100875,t:24.432281,addr:'大学路，厦大白城校门对面',what:'金色沙滩、夕阳、合影 & 视频结尾',how:['脚印：<b>贴地低角度</b>','夕阳：<b>逆光拍剪影</b>','一人站高处俯拍 5 人躺拼「黄」字','5 人同时起跳，连拍 / 慢动作'],imgs:['baicheng_1','baicheng_3','baicheng_4','baicheng_6','baicheng_5'],ai:['beach','jump'],q:'厦门白城沙滩 拍照 合影'},
+ xmu_west:{n:'厦大西门（入校）',poi:'厦门大学思明校区(西门)',g:118.093510,t:24.437130,addr:'思明南路 422 号，思明南路尽头',what:'入校核验预约 + 身份证',how:['校门口合影可作备用'],imgs:['xmu_west_1'],q:'厦门大学 预约 入校'},
+ qunxian:{n:'群贤楼群',poi:'厦门大学思明校区群贤楼群',g:118.095327,t:24.436677,addr:'厦大思明校区西侧',what:'嘉庚风格老建筑：红砖 + 绿瓦 + 拱廊',how:['拱廊纵深 + 对称构图','找黄色窗框 / 灯 / 标识'],imgs:['qunxian_1'],q:'厦大 群贤楼 拍照'},
+ jiannan:{n:'建南大会堂 · 上弦场',poi:'厦门大学思明校区建南大会堂',g:118.097891,t:24.434409,addr:'厦大思明校区南侧，面朝大海',what:'看台 + 大会堂 + 远处大海',how:['看台高处拍，<b>大会堂做背景</b>','合影备选：全员坐看台'],imgs:['jiannan_4','jiannan_5','shangxian_1'],q:'厦大 上弦场 建南大会堂 拍照'},
+ furonghu:{n:'芙蓉湖',poi:'厦门大学芙蓉湖',g:118.098698,t:24.436601,addr:'厦大思明校区中部',what:'湖景、黑天鹅、湖边黄花 / 单车',how:['湖面倒影 + 对岸建筑','湖边黄色元素做前景'],imgs:['furonghu_1'],q:'厦大芙蓉湖 拍照'},
+ furongsd:{n:'芙蓉隧道',poi:'芙蓉隧道',g:118.101875,t:24.435275,addr:'厦大芙蓉区，西口近芙蓉路',what:'隧道两侧学生手绘涂鸦',how:['黄色涂鸦做<b>前景</b>，隧道纵深做背景','5 人走进隧道背影 → 视频素材'],imgs:['furongsd_4'],ai:['tunnel'],q:'厦大芙蓉隧道 涂鸦 拍照'},
+ baichengmen:{n:'厦大白城校门（出校）',poi:'厦门大学思明校区(白城校门)',g:118.102104,t:24.433194,addr:'大学路，过马路即白城沙滩',what:'出校点',how:['出门过大学路约 150 米到沙滩'],imgs:['baichengmen_1'],q:'厦大白城校门'},
 };
 
-const PLANS={
- p1:{title:'方案一 · 沙坡尾（主方案）',theme:'从骑楼黄走到沙滩黄：中山路老城 → 沙坡尾 → 白城沙滩',
-  key:'⚠️ 关键节点：<b>17:05 必须离开沙坡尾</b>；走得慢可直接打车去白城（约 5 分钟）。',
-  maps:[['route_map_real','真实路线图（高德底图）','站点坐标来自高德 POI，路线按真实路网规划，距离为实测'],
-        ['route_map_ai','插画路线图','适合发群 / 打印，比例为示意'],
-        ['route_map','抽象示意图','站点 / 路段 / 任务一图看清（可编辑 SVG）']],
-  seg:[['A','① 酒店 → ② 中山路 → 局口街','🚶 步行','鹭江道向北（海在左手）→ 右转水仙路 → 中山路西口 → 向东逛到局口街','1.1 km / 约 15′'],
-       ['B','局口街 → ③ 沙坡尾','🚕 打车','思明南路「中山路」公交站上车 → 思明南路一路向南 → 演武路 / 大学路 → 沙坡尾下车','3.7 km / 10–15′'],
-       ['C','③ 沙坡尾 → ④ 观景平台 → ⑤ 白城','🚶 步行','沿演武路海边向东（海在右手）→ 演武大桥观景平台 → 厦大白城沙滩','2.1 km / 约 25′'],
-       ['D','⑤ 白城 → ① 酒店','🚕 打车','演武大桥 / 环岛南路 → 鹭江道 → 酒店','4.3 km / 10–15′']],
-  tl:[['15:20','瑞颐大酒店大堂','集合、分工、确认黄色单品'],['15:30–15:45','🚶 鹭江道 → 水仙路 → 中山路','拍视频开头'],
-      ['15:45–16:30','② 中山路 / 局口街（八市可选）','拍 3 张黄 + 黄则和花生汤 + 写点评'],['16:30–16:45','🚕 思明南路 → 沙坡尾','照片丢共享相册'],
-      ['16:45–17:05','③ 沙坡尾 / 艺术西区 / 避风坞','拍 3 张黄 + 找隐藏宝藏'],['17:05–17:30','🚶 演武路 → ④ 观景平台 → 白城','沿途补拍'],
-      ['17:30–17:50','⑤ 白城沙滩','拍 3 张黄 + 创意合影 + 视频结尾'],['17:50–18:00','沙滩附近','剪视频、提交'],['18:00–','🚕 回酒店','—']],
-  spots:[['②','zhongshan','15:45–16:30'],['②','huangzehe','中山路西口'],['②','jukou','中山路东段'],['可选','bashi','+5′'],
-         ['③','shapowei','16:45–17:05'],['③','bifengwu','16:45–17:05'],['④','yanwu','途经 17:15 左右'],['⑤','baicheng','17:30–17:50']]},
- p2:{title:'方案二 · 厦门大学（备选，需预约）',theme:'中山路 → 厦门大学校内 → 白城校门出 → 白城沙滩',
-  key:'⚠️ <b>需提前在厦大官方渠道为 5 人预约入校</b>，带身份证 + 预约码；约不上就走方案一。入校政策以官方当天公布为准。',
-  maps:[['route_map_real_xmu','真实路线图（高德底图）','a–e 为校内途经点，坐标来自高德 POI'],
-        ['route_map_xmu_ai','插画路线图','适合发群 / 打印，比例为示意（③ 实际在思明南路尽头）'],
-        ['route_map_xmu','抽象示意图','站点 / 路段 / 任务一图看清（可编辑 SVG）']],
-  seg:[['A','① 酒店 → ② 中山路 → 局口街','🚶 步行','同方案一：鹭江道向北 → 水仙路 → 中山路 → 局口街','1.1 km / 约 15′'],
-       ['B','局口街 → ③ 厦大西门','🚕 打车','思明南路「中山路」公交站上车 → 思明南路一路向南开到头 → 厦大西门','2.9 km / 10–15′'],
-       ['C','③ 西门 → a–e → 白城校门','🚶 步行','群贤楼群 → 建南大会堂 / 上弦场 → 芙蓉湖 → 芙蓉隧道 → 白城校门','2.0 km / 约 30′（不含拍照）'],
-       ['E','白城校门 → ④ 白城沙滩','🚶 步行','出校门过大学路','150 m / 2′'],
-       ['D','④ 白城 → ① 酒店','🚕 打车','演武大桥 → 鹭江道 → 酒店','4.3 km / 10–15′']],
-  tl:[['15:20','瑞颐大酒店大堂','集合，确认身份证 + 预约码'],['15:30–15:45','🚶 鹭江道 → 水仙路 → 中山路','拍视频开头'],
-      ['15:45–16:25','② 中山路 / 局口街','拍 3 张黄 + 花生汤 + 点评 + 老巷找隐藏宝藏'],['16:25–16:40','🚕 思明南路 → 厦大西门','—'],
-      ['16:40–17:30','③ 厦大校内 a → e','拍 3 张黄（芙蓉湖 / 隧道涂鸦）+ 视频素材'],['17:30–17:50','④ 白城沙滩','拍 3 张黄 + 创意合影 + 视频结尾'],
-      ['17:50–18:00','沙滩附近','剪视频、提交'],['18:00–','🚕 回酒店','—']],
-  spots:[['②','zhongshan','15:45–16:25'],['②','huangzehe','中山路西口'],['②','jukou','隐藏宝藏'],['③','xmu_west','16:40 入校'],
-         ['a','qunxian','校内'],['b','jiannan','校内'],['c','furonghu','校内'],['d','furongsd','校内'],['e','baichengmen','17:25 出校'],['④','baicheng','17:30–17:50']]},
+const P={
+ p1:{theme:'从骑楼黄走到沙滩黄：中山路 → 沙坡尾 → 白城沙滩',warn:'⚠️ <b>17:05 必须离开沙坡尾</b>；走得慢就直接打车去白城（约 5 分钟）。',
+  maps:[['route_map_real','真实路线图','高德底图 · 实测距离'],['route_map_ai','插画路线图','适合发群']],
+  legs:[['🚶','A · 酒店 → 中山路','1.1 km · 约 15 分钟','出门上<b>鹭江道</b>向北（海在左手）→ 右转<b>水仙路</b> → 中山路西口 → 向东逛到局口街'],
+        ['🚕','B · 中山路 → 沙坡尾','3.7 km · 10–15 分钟','在思明南路「<b>中山路</b>」公交站上车 → <b>思明南路</b>一路向南 → 演武路 / 大学路 → 沙坡尾'],
+        ['🚶','C · 沙坡尾 → 白城沙滩','2.1 km · 约 25 分钟','沿<b>演武路</b>海边向东（海在右手）→ 演武大桥观景平台 → 白城沙滩'],
+        ['🚕','D · 白城 → 酒店','4.3 km · 10–15 分钟','演武大桥 → <b>鹭江道</b> → 酒店']],
+  tl:[['15:20','酒店大堂集合','分工、确认黄色单品'],['15:30','🚶 鹭江道 → 中山路','拍视频开头',1],['15:45','② 中山路 · 局口街','3 张黄 + 花生汤 + 点评'],['16:30','🚕 打车去沙坡尾','照片传共享相册',1],['16:45','③ 沙坡尾','3 张黄 + 隐藏宝藏'],['17:05','🚶 演武路 → 观景平台','沿途补拍',1],['17:30','⑤ 白城沙滩','3 张黄 + 合影 + 视频结尾'],['17:50','剪视频 · 提交','18:00 前完成'],['18:00','🚕 回酒店','',1]],
+  spots:[['②','zhongshan','15:45–16:30'],['②','huangzehe','中山路西口'],['②','jukou','中山路东段'],['+','bashi','可选 +5′'],['③','shapowei','16:45–17:05'],['③','bifengwu','16:45–17:05'],['④','yanwu','途经'],['⑤','baicheng','17:30–17:50']]},
+ p2:{theme:'中山路 → 厦门大学（西门进 · 白城校门出）→ 白城沙滩',warn:'⚠️ <b>需提前为 5 人预约厦大入校</b>，带身份证 + 预约码；约不上就走方案一。',
+  maps:[['route_map_real_xmu','真实路线图','高德底图 · a–e 校内点'],['route_map_xmu_ai','插画路线图','适合发群']],
+  legs:[['🚶','A · 酒店 → 中山路','1.1 km · 约 15 分钟','同方案一：<b>鹭江道</b>向北 → <b>水仙路</b> → 中山路 → 局口街'],
+        ['🚕','B · 中山路 → 厦大西门','2.9 km · 10–15 分钟','思明南路「<b>中山路</b>」公交站上车 → <b>思明南路</b>一路向南开到头 → 厦大西门'],
+        ['🚶','C · 厦大校内','2.0 km · 约 30 分钟','群贤楼群 → 建南大会堂 / 上弦场 → 芙蓉湖 → 芙蓉隧道 → <b>白城校门</b>'],
+        ['🚶','E · 白城校门 → 沙滩','150 m · 2 分钟','出校门过<b>大学路</b>'],
+        ['🚕','D · 白城 → 酒店','4.3 km · 10–15 分钟','演武大桥 → <b>鹭江道</b> → 酒店']],
+  tl:[['15:20','酒店大堂集合','确认身份证 + 预约码'],['15:30','🚶 鹭江道 → 中山路','拍视频开头',1],['15:45','② 中山路 · 局口街','3 张黄 + 花生汤 + 隐藏宝藏'],['16:25','🚕 打车去厦大西门','',1],['16:40','③ 厦大校内 a → e','3 张黄 + 隧道视频素材'],['17:30','④ 白城沙滩','3 张黄 + 合影 + 视频结尾'],['17:50','剪视频 · 提交','18:00 前完成'],['18:00','🚕 回酒店','',1]],
+  spots:[['②','zhongshan','15:45–16:25'],['②','huangzehe','中山路西口'],['②','jukou','隐藏宝藏'],['③','xmu_west','16:40 入校'],['a','qunxian','校内'],['b','jiannan','校内'],['c','furonghu','校内'],['d','furongsd','校内'],['e','baichengmen','17:25 出校'],['④','baicheng','17:30–17:50']]},
 };
 
-function esc(s){return s}
-function renderPlan(id){
-  const p=PLANS[id], el=document.getElementById(id);
-  let h=`<h2 id="${id}-top">${p.title}</h2>
-  <nav class="sub"><a href="#${id}-maps">🗺 路线图</a><a href="#${id}-seg">🚶 走法</a><a href="#${id}-tl">⏰ 时间线</a><a href="#${id}-spots">📷 拍照点</a></nav>
-  <div class="banner">${p.theme}</div><div class="banner warn">${p.key}</div>
-  <h2 id="${id}-maps">路线图</h2><div class="maps">`;
-  p.maps.forEach(([f,t,d])=>{h+=`<figure><img loading="lazy" src="assets/maps/${f}.jpg" alt="${t}" data-cap="${t}"><figcaption><b>${t}</b><br>${d}</figcaption></figure>`});
-  h+=`</div><h2 id="${id}-seg">分段走法（走什么路）</h2><div class="tw"><table><tr><th>段</th><th>从 → 到</th><th>方式</th><th>走什么路</th><th>距离 / 用时</th></tr>`;
-  p.seg.forEach(r=>{h+=`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`});
-  h+=`</table></div><h2 id="${id}-tl">时间线</h2><div class="tw"><table><tr><th>时间</th><th>地点</th><th>要做的事</th></tr>`;
-  p.tl.forEach(r=>{h+=`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`});
-  h+=`</table></div><h2 id="${id}-spots">推荐拍照点</h2>
-  <p class="legend">点「高德定位 / 步行导航」可在手机上直接打开高德 App；参考图为高德地图上的真实用户照片，<span class="tag ai">AI 构图示意</span> 用来示范机位和构图，非实拍。想看更多网红图点「小红书」。</p>`;
-  p.spots.forEach(([no,k,t])=>{
-    const s=SP[k]; const subc=/^[a-e]$/.test(no)?' sub':'';
-    h+=`<div class="spot"><div class="spot-h"><div class="no${subc}">${no}</div><div><h3>${s.n}</h3><div class="t">${t}</div></div></div><div class="spot-b">
-    <dl class="kv"><dt>位置</dt><dd>${s.addr}</dd><dt>高德搜索</dt><dd><b>${s.poi}</b>（${s.lng}, ${s.lat}）</dd><dt>拍什么</dt><dd>${s.what}</dd></dl>
-    <div class="shot"><b>📷 机位 & 拍法</b><ul class="clean">${s.how.map(x=>`<li>${x}</li>`).join('')}</ul></div>
-    <div class="btns"><a class="btn" target="_blank" href="${amap(s.poi,s.lng,s.lat)}">📍 高德定位</a><a class="btn blue" target="_blank" href="${nav(s.poi,s.lng,s.lat,'walk')}">🧭 步行导航</a><a class="btn red" target="_blank" href="${xhs(s.xhs)}">📕 小红书参考</a></div>
-    <div class="gal">`;
-    (s.ai||[]).forEach(a=>{h+=`<figure><img loading="lazy" src="${C}${a}.jpg" data-cap="${s.n} · AI 构图示意（非实拍）"><figcaption>AI 构图示意</figcaption></figure>`});
-    s.imgs.forEach(i=>{h+=`<figure><img loading="lazy" src="${A}${i}.jpg" data-cap="${s.n} · 高德地图实拍"><figcaption>高德实拍</figcaption></figure>`});
-    h+=`</div></div></div>`;
+function planHTML(id){
+  const p=P[id];
+  let h=`<div class="seg"><div class="in"><button class="on" data-p="route">🗺 路线</button><button data-p="time">⏰ 时间</button><button data-p="spot">📷 拍照点</button></div></div>`;
+  // 路线
+  h+=`<div class="pane on" data-p="route"><div class="note y">${p.theme}</div><div class="note r">${p.warn}</div>`;
+  p.maps.forEach(([f,t,d])=>h+=`<div class="card map" data-img="assets/maps/${f}.jpg" data-t="${t}"><img loading="lazy" src="assets/maps/${f}.jpg" alt="${t}"><div class="cap"><div><b>${t}</b> <span>${d}</span></div><span class="zoom">🔍 查看大图</span></div></div>`);
+  h+=`<div class="h">🚶 每段怎么走</div><div class="card">`;
+  p.legs.forEach(([ic,t,d,r])=>h+=`<div class="leg"><div class="ic ${ic==='🚕'?'car':''}">${ic}</div><div><div class="t">${t}</div><div class="d">${d}</div><div class="r">${r}</div></div></div>`);
+  h+=`</div></div>`;
+  // 时间
+  h+=`<div class="pane" data-p="time"><div class="tl">`;
+  p.tl.forEach(([tm,t,s,mv])=>h+=`<div class="it"><div class="tm">${tm}</div><div class="dot ${mv?'mv':''}"></div><div class="bd ${mv?'mv':''}"><b>${t}</b>${s?`<span>${s}</span>`:''}</div></div>`);
+  h+=`</div></div>`;
+  // 拍照点
+  h+=`<div class="pane" data-p="spot"><div class="chips2">`;
+  p.spots.forEach(([no,k])=>h+=`<a href="#${id}-${k}">${no} ${SP[k].n}</a>`);
+  h+=`</div>`;
+  p.spots.forEach(([no,k,w])=>{
+    const s=SP[k],pics=[...(s.ai||[]).map(a=>[C+a+'.jpg','AI 构图示意',1]),...s.imgs.map(i=>[A+i+'.jpg','高德实拍',0])];
+    h+=`<div class="card spot" id="${id}-${k}"><div class="top"><div class="no ${/^[a-e]$/.test(no)?'sub':''}">${({'①':1,'②':2,'③':3,'④':4,'⑤':5})[no]||no}</div><div><h3>${s.n}</h3><div class="when">${w}</div></div></div>
+    <div class="sw">${pics.map(([src,c,ai])=>`<figure class="${pics.length===1?'one':''}" data-img="${src}" data-t="${s.n} · ${c}"><img loading="lazy" src="${src}"><figcaption class="${ai?'ai':''}">${c}</figcaption></figure>`).join('')}</div>
+    ${pics.length>1?`<div class="cnt">← 左右滑动看 ${pics.length} 张参考图</div>`:''}
+    <div class="info"><div class="row"><div class="k">位置</div><div class="v">${s.addr}</div></div><div class="row"><div class="k">高德搜</div><div class="v"><b>${s.poi}</b></div></div><div class="row"><div class="k">拍什么</div><div class="v">${s.what}</div></div></div>
+    <div class="how"><b>📷 机位 & 拍法</b><ol>${s.how.map(x=>`<li>${x}</li>`).join('')}</ol></div>
+    <div class="acts"><a href="${amap(s.poi,s.g,s.t)}">📍 定位</a><a class="b" href="${nav(s.poi,s.g,s.t)}">🧭 导航</a><a class="x" href="${xhs(s.q)}">📕 小红书</a></div></div>`;
   });
-  el.innerHTML=h;
+  return h+`</div>`;
 }
-renderPlan('p1');renderPlan('p2');
-const tabs=document.querySelectorAll('#tabs button');
-function show(t){tabs.forEach(b=>b.classList.toggle('on',b.dataset.t===t));document.querySelectorAll('section.plan').forEach(s=>s.classList.toggle('on',s.id===t));}
-tabs.forEach(b=>b.onclick=()=>{show(b.dataset.t);history.replaceState(null,'','#'+b.dataset.t);window.scrollTo({top:0,behavior:'smooth'})});
-const hs=location.hash.replace('#','').split('-')[0]; if(['p1','p2','task'].includes(hs)) show(hs);
-const lb=document.getElementById('lb');
-document.addEventListener('click',e=>{const i=e.target.closest('.maps img,.gal img');if(i){lb.querySelector('img').src=i.src;lb.querySelector('p').textContent=i.dataset.cap||'';lb.classList.add('on')}else if(e.target.closest('#lb'))lb.classList.remove('on')});
+document.getElementById('v-p1').innerHTML=planHTML('p1');
+document.getElementById('v-p2').innerHTML=planHTML('p2');
+document.getElementById('v-task').innerHTML=`<div class="seg"><div class="in"><button class="on" data-p="t1">🎯 任务</button><button data-p="t2">👥 分工</button><button data-p="t3">☑️ 清单</button></div></div>
+<div class="pane on task" data-p="t1">
+ <div class="card"><div class="pad"><span class="badge">01 必做</span><b>寻找你的颜色</b><p>3 个场景各拍 3 张黄色，共 9 张，统一竖图拼九宫格；黄色占画面 ≥ 1/3。</p></div></div>
+ <div class="card"><div class="pad"><span class="badge">02 必做</span><b>尝一口厦门</b><p>黄则和花生汤（中山路总店），店名带「黄」。点评：⭐ 评分 + 颜值 + 口感 + 一句话 + 适合谁。</p></div></div>
+ <div class="card"><div class="pad"><span class="badge">03 必做</span><b>我们的厦门时刻</b><p>白城沙滩：躺拼「黄」字俯拍 / 借位托夕阳 / 沙上写「阳光黄」/ 全员起跳。路上先定 1 主 1 备。</p></div></div>
+ <div class="card"><div class="pad"><span class="badge o">04 选做</span><b>发现隐藏宝藏</b><p>方案一：沙坡尾独立小店 / 老渔港；方案二：局口街老巷。照片 + 3 句推荐理由。</p></div></div>
+ <div class="card"><div class="pad"><span class="badge o">05 选做</span><b>15 秒厦门</b><p>骑楼走入 → 喝汤比赞 → 涂鸦/隧道转场 → 黄色快闪 → 沙滩起跳 + 字幕「阳光黄 ☀️」。17:50 开剪。</p></div></div>
+</div>
+<div class="pane" data-p="t2"><div class="card">
+ <div class="mem"><b>逍杰 · 组长</b><span>统筹计时、带路、汇总提交</span></div>
+ <div class="mem"><b>小雅 · 摄影 A</b><span>01 九宫格照片</span></div>
+ <div class="mem"><b>奇儿 · 美食官</b><span>02 点单 + 写点评</span></div>
+ <div class="mem"><b>明城 · 摄影 B</b><span>05 视频拍摄与剪辑</span></div>
+ <div class="mem"><b>寇森 · 探店官</b><span>04 隐藏宝藏 + 03 合影构图</span></div>
+</div></div>
+<div class="pane chk" data-p="t3">
+ <div class="h">提交清单</div><div class="card">
+ ${['01 九宫格 9 张黄色','02 美食照片 + 点评','03 创意小组照','04 隐藏宝藏 + 推荐理由','05 15 秒视频'].map((t,i)=>`<label><input type="checkbox" data-k="c${i}">${t}</label>`).join('')}</div>
+ <div class="h">出发前</div><div class="card">
+ ${['每人 1 件黄色单品','防晒 + 水 + 充电宝','建好共享相册','剪映模板选好','（方案二）厦大预约码 + 身份证'].map((t,i)=>`<label><input type="checkbox" data-k="b${i}">${t}</label>`).join('')}</div>
+ <div class="note y">下雨：中山路骑楼有廊可避雨，沙滩合影改骑楼下。沙滩不下深水，注意涨潮。</div>
+</div>`;
+
+// 底部 tab
+const tabs=document.querySelectorAll('.tabbar button');
+function go(v){tabs.forEach(b=>b.classList.toggle('on',b.dataset.v===v));document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id==='v-'+v));localStorage.setItem('v',v);window.scrollTo(0,0)}
+tabs.forEach(b=>b.onclick=()=>go(b.dataset.v));
+go(localStorage.getItem('v')||'p1');
+// 分段
+document.querySelectorAll('.view').forEach(v=>v.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{
+  v.querySelectorAll('.seg button').forEach(x=>x.classList.toggle('on',x===b));
+  v.querySelectorAll('.pane').forEach(x=>x.classList.toggle('on',x.dataset.p===b.dataset.p));
+  window.scrollTo({top:v.offsetTop-0,behavior:'smooth'});
+}));
+// 拍照点 chips 跳转
+document.addEventListener('click',e=>{const a=e.target.closest('.chips2 a');if(a){e.preventDefault();const el=document.querySelector(a.getAttribute('href'));window.scrollTo({top:el.getBoundingClientRect().top+scrollY-70,behavior:'smooth'})}});
+// 勾选持久化
+document.querySelectorAll('input[data-k]').forEach(i=>{i.checked=localStorage.getItem(i.dataset.k)==='1';i.onchange=()=>localStorage.setItem(i.dataset.k,i.checked?'1':'0')});
+// 大图
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.addEventListener('click',e=>{const f=e.target.closest('[data-img]');if(!f)return;li.src=f.dataset.img;lb.querySelector('.t').textContent=f.dataset.t;lb.classList.remove('big');lb.querySelector('.z').textContent='放大';lb.classList.add('on');document.body.style.overflow='hidden'});
+lb.querySelector('.c').onclick=()=>{lb.classList.remove('on');document.body.style.overflow=''};
+lb.querySelector('.z').onclick=()=>{const b=lb.classList.toggle('big');lb.querySelector('.z').textContent=b?'适应屏幕':'放大'};
 </script>
 </body>
 </html>
