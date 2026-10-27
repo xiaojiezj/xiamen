@@ -104,6 +104,7 @@ a{color:inherit;text-decoration:none}
 .mem:last-child{border-bottom:0}
 .mem span{color:var(--sub);font-size:13px;text-align:right}
 .chk label{display:flex;gap:10px;align-items:center;padding:11px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.wx{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:10px;text-align:center}.wx div{background:#fffbea;border-radius:10px;padding:6px 2px}.wx i{display:block;font-style:normal;font-size:18px}.wx b{display:block;font-size:12px}.wx span{font-size:10px;color:var(--sub)}
 .chk input{width:20px;height:20px;accent-color:var(--y3)}
 
 /* 底部 Tab */
@@ -132,7 +133,7 @@ footer{font-size:11px;color:var(--sub);text-align:center;padding:16px 18px 4px}
 <div class="app">
   <div class="hero">
     <h1>Color Walk · 阳光黄组 ☀️</h1>
-    <div class="s">厦门团建 · 15:30–18:00 · 厦门本岛</div>
+    <div class="s">2026.10.30 周五 · 15:30–18:00 · 晴 25–27°C · 日落 17:29</div>
     <div class="chips"><span class="chip">👥 逍杰 · 小雅 · 奇儿 · 明城 · 寇森</span><span class="chip">🏨 瑞颐大酒店出发</span></div>
   </div>
 
@@ -166,7 +167,7 @@ const SP={
  shapowei:{n:'沙坡尾艺术西区',poi:'沙坡尾艺术西区',g:118.087587,t:24.437609,addr:'沙坡尾 60 号',what:'涂鸦墙、艺术西区门头、文创小物',how:['人站一侧 1/3，<b>涂鸦墙占 2/3</b>','文创小物<b>微距特写</b>','涂鸦墙前每人一个手势 → 视频转场'],imgs:['shapowei_1','shapowei_5','shapowei_6','shapowei_2','shapowei_3'],ai:['graffiti'],q:'沙坡尾 涂鸦墙 拍照机位'},
  bifengwu:{n:'沙坡尾避风坞',poi:'避风坞',g:118.085565,t:24.439145,addr:'沙坡尾艺术西区西侧水湾',what:'渔船、黄色浮标、老房子倒影',how:['岸边拍，<b>水面做前景</b>','渔船上的黄色浮标做主体'],imgs:['bifengwu_1','bifengwu_3','bifengwu_5'],q:'沙坡尾避风坞 拍照'},
  yanwu:{n:'演武大桥观景平台',poi:'演武大桥观景平台',g:118.090262,t:24.433305,addr:'演武大桥与演武路交叉口西南 150 米',what:'海上栈道、演武大桥、双子塔',how:['栈道栏杆做<b>引导线</b>','补拍黄色单车 / 标线','拍一段海边走路视频'],imgs:['yanwu_1','yanwu_3','yanwu_4','yanwu_5'],q:'演武大桥观景平台 拍照'},
- baicheng:{n:'白城沙滩',poi:'白城沙滩',g:118.100875,t:24.432281,addr:'大学路，厦大白城校门对面',what:'金色沙滩、夕阳、合影 & 视频结尾',how:['脚印：<b>贴地低角度</b>','夕阳：<b>逆光拍剪影</b>','一人站高处俯拍 5 人躺拼「黄」字','5 人同时起跳，连拍 / 慢动作'],imgs:['baicheng_1','baicheng_3','baicheng_4','baicheng_6','baicheng_5'],ai:['beach','jump'],q:'厦门白城沙滩 拍照 合影'},
+ baicheng:{n:'白城沙滩',poi:'白城沙滩',g:118.100875,t:24.432281,addr:'大学路，厦大白城校门对面',what:'金色沙滩、夕阳、合影 & 视频结尾',how:['<b>17:29 日落前</b>先拍：托太阳借位、逆光剪影、5 人起跳（连拍 / 慢动作）','一人站高处俯拍 5 人躺拼「黄」字','日落后余晖：脚印<b>贴地低角度</b>、沙上写「阳光黄」'],imgs:['baicheng_1','baicheng_3','baicheng_4','baicheng_6','baicheng_5'],ai:['beach','jump'],q:'厦门白城沙滩 拍照 合影'},
  xmu_west:{n:'厦大访客中心（唯一游客入口）',poi:'厦大医院(公交站)',g:118.093103,t:24.434983,addr:'大学路「厦大医院」公交站旁，访客中心南侧地面入口',what:'游客只能从访客中心刷身份证入校，校门仅限师生',how:['打车目的地填「<b>厦大医院(公交站)</b>」，不要导航到西门','下车走百来米到访客中心<b>南侧地面入口</b> → 扶梯到负一层','跟「访客通道」指示走到底 → 刷身份证 + 人脸入闸','西入口长通道很绕，别走'],imgs:['xmu_west_1'],q:'厦门大学 预约 入校'},
  qunxian:{n:'群贤楼群',poi:'厦门大学思明校区群贤楼群',g:118.095327,t:24.436677,addr:'厦大思明校区西侧',what:'嘉庚风格老建筑：红砖 + 绿瓦 + 拱廊',how:['拱廊纵深 + 对称构图','找黄色窗框 / 灯 / 标识'],imgs:['qunxian_1'],q:'厦大 群贤楼 拍照'},
  jiannan:{n:'建南大会堂 · 上弦场',poi:'厦门大学思明校区建南大会堂',g:118.097891,t:24.434409,addr:'厦大思明校区南侧，面朝大海',what:'看台 + 大会堂 + 远处大海',how:['看台高处拍，<b>大会堂做背景</b>','合影备选：全员坐看台'],imgs:['jiannan_4','jiannan_5','shangxian_1'],q:'厦大 上弦场 建南大会堂 拍照'},
@@ -176,24 +177,24 @@ const SP={
 };
 
 const P={
- p1:{theme:'从骑楼黄走到沙滩黄：中山路 → 沙坡尾 → 白城沙滩',warn:'⚠️ <b>17:05 必须离开沙坡尾</b>；走得慢就直接打车去白城（约 5 分钟）。',
+ p1:{theme:'从骑楼黄走到沙滩黄：中山路 → 沙坡尾 → 白城沙滩',warn:'🌅 当天<b>日落 17:29</b>：<b>16:50 必须从沙坡尾打车去白城</b>，17:00 到沙滩先拍夕阳、托太阳和起跳，日落后再补拍脚印。',
   maps:[['route_map_real','真实路线图','高德底图 · 实测距离'],['route_map_ai','插画路线图','适合发群']],
   legs:[['🚶','A · 酒店 → 中山路','1.1 km · 约 15 分钟','出门上<b>鹭江道</b>向北（海在左手）→ 右转<b>水仙路</b> → 中山路西口 → 向东逛到局口街'],
         ['🚕','B · 中山路 → 沙坡尾','3.7 km · 10–15 分钟','在思明南路「<b>中山路</b>」公交站上车 → <b>思明南路</b>一路向南 → 演武路 / 大学路 → 沙坡尾'],
-        ['🚶','C · 沙坡尾 → 白城沙滩','2.1 km · 约 25 分钟','沿<b>演武路</b>海边向东（海在右手）→ 演武大桥观景平台 → 白城沙滩'],
+        ['🚕','C · 沙坡尾 → 白城沙滩','3.2 km · 约 8 分钟','16:50 在沙坡尾上车 → <b>演武路</b> → <b>演武大桥</b> → 白城沙滩（赶日落，不再步行）'],
         ['🚕','D · 白城 → 酒店','4.3 km · 10–15 分钟','演武大桥 → <b>鹭江道</b> → 酒店']],
-  tl:[['15:20','酒店大堂集合','分工、确认黄色单品'],['15:30','🚶 鹭江道 → 中山路','拍视频开头',1],['15:45','② 中山路 · 局口街','3 张黄 + 花生汤 + 点评'],['16:30','🚕 打车去沙坡尾','照片传共享相册',1],['16:45','③ 沙坡尾','3 张黄 + 隐藏宝藏'],['17:05','🚶 演武路 → 观景平台','沿途补拍',1],['17:30','⑤ 白城沙滩','3 张黄 + 合影 + 视频结尾'],['17:50','剪视频 · 提交','18:00 前完成'],['18:00','🚕 回酒店','',1]],
-  spots:[['②','zhongshan','15:45–16:30'],['②','huangzehe','中山路西口'],['②','jukou','中山路东段'],['+','bashi','可选 +5′'],['③','shapowei','16:45–17:05'],['③','bifengwu','16:45–17:05'],['④','yanwu','途经'],['⑤','baicheng','17:30–17:50']]},
- p2:{theme:'中山路 → 厦门大学（访客中心进 · 白城校门出）→ 白城沙滩',warn:'⚠️ <b>游客只能从「厦大访客中心」刷身份证入校</b>，校门不让进。需在厦大官方公众号<b>前一天 16:00 前预约（摇号）</b>，主约人必须到场；约不上就走方案一。',
+  tl:[['15:20','酒店大堂集合','分工、确认黄色单品、涂防晒'],['15:30','🚶 鹭江道 → 中山路','拍视频开头',1],['15:45','② 中山路 · 局口街','3 张黄 + 花生汤 + 点评（30 分钟）'],['16:15','🚕 打车去沙坡尾','照片传共享相册',1],['16:30','③ 沙坡尾','3 张黄 + 隐藏宝藏（20 分钟）'],['16:50','🚕 打车去白城（约 8 分钟）','赶 17:29 日落',1],['17:00','⑤ 白城沙滩 · 日落前','托太阳 / 逆光剪影 / 起跳 / 躺拼「黄」字'],['17:29','🌅 日落','余晖补拍：沙滩脚印、3 张黄'],['17:45','剪视频 · 提交','18:00 前完成'],['18:00','🚕 回酒店','',1]],
+  spots:[['②','zhongshan','15:45–16:15'],['②','huangzehe','中山路西口'],['②','jukou','中山路东段'],['+','bashi','可选 +5′'],['③','shapowei','16:30–16:50'],['③','bifengwu','16:30–16:50'],['④','yanwu','打车途经 · 本方案不停'],['⑤','baicheng','17:00–17:45 · 日落 17:29']]},
+ p2:{theme:'中山路 → 厦门大学（访客中心进 · 白城校门出）→ 白城沙滩',warn:'🌅 日落 17:29，<b>17:05 必须从白城校门出校</b>。⚠️ <b>游客只能从「厦大访客中心」刷身份证入校</b>，校门不让进。需在厦大官方公众号<b>前一天 16:00 前预约（摇号）</b>，主约人必须到场；约不上就走方案一。',
   maps:[['route_map_real_xmu','真实路线图','高德底图 · a–e 校内点'],['route_map_xmu_ai','插画路线图','适合发群']],
   legs:[['🚶','A · 酒店 → 中山路','1.1 km · 约 15 分钟','同方案一：<b>鹭江道</b>向北 → <b>水仙路</b> → 中山路 → 局口街'],
         ['🚕','B · 中山路 → 厦大访客中心','3.1 km · 10–15 分钟','思明南路「<b>中山路</b>」公交站上车，目的地填「<b>厦大医院(公交站)</b>」→ 思明南路 → 演武路 → 大学路'],
         ['🚶','V · 访客中心入校','约 150 m · 5 分钟','南侧地面入口 → 扶梯到<b>负一层</b> → 访客通道 → 刷身份证闸机'],
-        ['🚶','C · 厦大校内','2.4 km · 约 35 分钟','群贤楼群 → 芙蓉湖 / 颂恩楼 → 建南大会堂 / 上弦场 → 芙蓉隧道 → <b>白城校门</b>出校（出校任意门都可）'],
+        ['🚶','C · 厦大校内','1.7 km · 约 22 分钟','<b>芙蓉湖 / 颂恩楼</b> → <b>芙蓉隧道</b> → <b>白城校门</b>出校；群贤楼、上弦场时间够再绕'],
         ['🚶','E · 白城校门 → 沙滩','150 m · 2 分钟','出校门过<b>大学路</b>'],
         ['🚕','D · 白城 → 酒店','4.3 km · 10–15 分钟','演武大桥 → <b>鹭江道</b> → 酒店']],
-  tl:[['15:20','酒店大堂集合','确认身份证 + 预约码'],['15:30','🚶 鹭江道 → 中山路','拍视频开头',1],['15:45','② 中山路 · 局口街','3 张黄 + 花生汤 + 隐藏宝藏'],['16:25','🚕 打车到「厦大医院」站','',1],['16:40','③ 访客中心刷证入校','南入口 → 负一层 → 闸机'],['16:45','厦大校内 a → e','3 张黄 + 隧道视频素材'],['17:30','④ 白城沙滩','3 张黄 + 合影 + 视频结尾'],['17:50','剪视频 · 提交','18:00 前完成'],['18:00','🚕 回酒店','',1]],
-  spots:[['②','zhongshan','15:45–16:25'],['②','huangzehe','中山路西口'],['②','jukou','隐藏宝藏'],['③','xmu_west','16:40 入校'],['a','qunxian','校内'],['b','furonghu','校内'],['c','jiannan','校内'],['d','furongsd','校内'],['e','baichengmen','17:25 出校'],['④','baicheng','17:30–17:50']]},
+  tl:[['15:20','酒店大堂集合','确认身份证 + 预约码、涂防晒'],['15:30','🚶 鹭江道 → 中山路','拍视频开头',1],['15:45','② 中山路 · 局口街','3 张黄 + 花生汤 + 隐藏宝藏（30 分钟）'],['16:15','🚕 打车到「厦大医院」站','',1],['16:30','③ 访客中心刷证入校','南入口 → 负一层 → 闸机'],['16:35','厦大校内','芙蓉湖 → 芙蓉隧道 · 3 张黄 + 视频素材'],['17:05','白城校门出校','过大学路 150 m',1],['17:10','④ 白城沙滩 · 日落前','托太阳 / 逆光剪影 / 起跳 / 躺拼「黄」字'],['17:29','🌅 日落','余晖补拍：沙滩脚印、3 张黄'],['17:45','剪视频 · 提交','18:00 前完成'],['18:00','🚕 回酒店','',1]],
+  spots:[['②','zhongshan','15:45–16:15'],['②','huangzehe','中山路西口'],['②','jukou','隐藏宝藏'],['③','xmu_west','16:30 入校'],['b','furonghu','16:35 · 必去'],['d','furongsd','16:50 · 必去'],['e','baichengmen','17:05 出校'],['④','baicheng','17:10–17:45 · 日落 17:29'],['a','qunxian','可选 · 时间够再绕'],['c','jiannan','可选 · 时间够再绕']]},
 };
 
 function planHTML(id){
@@ -226,13 +227,13 @@ function planHTML(id){
 }
 document.getElementById('v-p1').innerHTML=planHTML('p1');
 document.getElementById('v-p2').innerHTML=planHTML('p2');
-document.getElementById('v-task').innerHTML=`<div class="seg"><div class="in"><button class="on" data-p="t1">🎯 任务</button><button data-p="t2">👥 分工</button><button data-p="t3">☑️ 清单</button></div></div>
+document.getElementById('v-task').innerHTML=`<div class="seg"><div class="in"><button class="on" data-p="t1">🎯 任务</button><button data-p="t2">👥 分工</button><button data-p="t4">🎒 携带</button><button data-p="t3">☑️ 清单</button></div></div>
 <div class="pane on task" data-p="t1">
  <div class="card"><div class="pad"><span class="badge">01 必做</span><b>寻找你的颜色</b><p>3 个场景各拍 3 张黄色，共 9 张，统一竖图拼九宫格；黄色占画面 ≥ 1/3。</p></div></div>
  <div class="card"><div class="pad"><span class="badge">02 必做</span><b>尝一口厦门</b><p>黄则和花生汤（中山路总店），店名带「黄」。点评：⭐ 评分 + 颜值 + 口感 + 一句话 + 适合谁。</p></div></div>
- <div class="card"><div class="pad"><span class="badge">03 必做</span><b>我们的厦门时刻</b><p>白城沙滩：躺拼「黄」字俯拍 / 借位托夕阳 / 沙上写「阳光黄」/ 全员起跳。路上先定 1 主 1 备。</p></div></div>
+ <div class="card"><div class="pad"><span class="badge">03 必做</span><b>我们的厦门时刻</b><p>白城沙滩，<b>17:29 日落前</b>拍：借位托夕阳 / 逆光起跳 / 躺拼「黄」字俯拍；日落后沙上写「阳光黄」。路上先定 1 主 1 备。</p></div></div>
  <div class="card"><div class="pad"><span class="badge o">04 选做</span><b>发现隐藏宝藏</b><p>方案一：沙坡尾独立小店 / 老渔港；方案二：局口街老巷。照片 + 3 句推荐理由。</p></div></div>
- <div class="card"><div class="pad"><span class="badge o">05 选做</span><b>15 秒厦门</b><p>骑楼走入 → 喝汤比赞 → 涂鸦/隧道转场 → 黄色快闪 → 沙滩起跳 + 字幕「阳光黄 ☀️」。17:50 开剪。</p></div></div>
+ <div class="card"><div class="pad"><span class="badge o">05 选做</span><b>15 秒厦门</b><p>骑楼走入 → 喝汤比赞 → 涂鸦/隧道转场 → 黄色快闪 → 沙滩起跳 + 字幕「阳光黄 ☀️」。17:45 开剪。</p></div></div>
 </div>
 <div class="pane" data-p="t2"><div class="card">
  <div class="mem"><b>逍杰 · 组长</b><span>统筹计时、带路、汇总提交</span></div>
@@ -241,11 +242,29 @@ document.getElementById('v-task').innerHTML=`<div class="seg"><div class="in"><b
  <div class="mem"><b>明城 · 摄影 B</b><span>05 视频拍摄与剪辑</span></div>
  <div class="mem"><b>寇森 · 探店官</b><span>04 隐藏宝藏 + 03 合影构图</span></div>
 </div></div>
+<div class="pane" data-p="t4">
+ <div class="card"><div class="pad"><b>☀️ 10.30 周五 · 厦门天气</b>
+  <div class="wx"><div><i>☀️</i><b>晴</b><span>降水 0%</span></div><div><i>🌡</i><b>25–27°C</b><span>傍晚 24°C</span></div><div><i>🌬</i><b>3 级风</b><span>海边傍晚凉</span></div><div><i>🕶</i><b>紫外线强</b><span>UV 6.6</span></div><div><i>🌅</i><b>17:29</b><span>日落</span></div></div>
+  <p style="font-size:12px;color:var(--sub);margin:6px 0 0">Open-Meteo 预报（10.27 查询），出发前再看一眼</p></div></div>
+ <div class="h">👕 穿什么</div><div class="card">
+  <div class="mem"><b>上衣</b><span>短袖 T 恤，<b>每人 1 件黄色单品</b></span></div>
+  <div class="mem"><b>外搭</b><span>薄长袖衬衫 / 防晒衣（下午挡晒，傍晚海边加）</span></div>
+  <div class="mem"><b>下装</b><span>短裤 / 轻薄长裤；要躺拼字，裤装更方便</span></div>
+  <div class="mem"><b>鞋</b><span>舒适运动鞋（步行 3–4 km + 沙滩），可备拖鞋</span></div>
+ </div>
+ <div class="h">🎒 带什么</div><div class="card chk">
+  ${[['防晒霜 SPF50（出发前涂好）','p0'],['墨镜 + 帽子（黄色帽子 = 现成道具）','p1'],['身份证（方案二入校必带）','p2'],['一瓶水','p3'],['湿巾 / 小毛巾（清理沙子）','p4'],['小双肩包 / 斜挎包，行李寄存酒店','p5'],['驱蚊液（方案二厦大树多，可选）','p6']].map(([t,k])=>`<label><input type="checkbox" data-k="${k}">${t}</label>`).join('')}
+ </div>
+ <div class="h">📸 全组装备</div><div class="card chk">
+  ${[['手机三脚架 / 自拍杆 ×1（合影 + 起跳必备）','g0'],['充电宝 ×2','g1'],['黄色道具：气球 / 丝巾 / 柠檬茶（可选）','g2'],['剪映装好 + 模板选好','g3'],['共享相册建好','g4']].map(([t,k])=>`<label><input type="checkbox" data-k="${k}">${t}</label>`).join('')}
+ </div>
+ <div class="note y">不用带：雨伞（降水 0%）、厚外套。</div>
+</div>
 <div class="pane chk" data-p="t3">
  <div class="h">提交清单</div><div class="card">
  ${['01 九宫格 9 张黄色','02 美食照片 + 点评','03 创意小组照','04 隐藏宝藏 + 推荐理由','05 15 秒视频'].map((t,i)=>`<label><input type="checkbox" data-k="c${i}">${t}</label>`).join('')}</div>
  <div class="h">出发前</div><div class="card">
- ${['每人 1 件黄色单品','防晒 + 水 + 充电宝','建好共享相册','剪映模板选好','（方案二）厦大预约码 + 身份证'].map((t,i)=>`<label><input type="checkbox" data-k="b${i}">${t}</label>`).join('')}</div>
+ ${['每人 1 件黄色单品','（方案二）前一天 16:00 前完成厦大预约摇号','（方案二）主约人确认到场 + 全员身份证','16:50 / 17:05 闹钟（赶 17:29 日落）'].map((t,i)=>`<label><input type="checkbox" data-k="b${i}">${t}</label>`).join('')}</div>
  <div class="note y">下雨：中山路骑楼有廊可避雨，沙滩合影改骑楼下。沙滩不下深水，注意涨潮。</div>
 </div>`;
 
