@@ -227,13 +227,13 @@ function planHTML(id){
 }
 document.getElementById('v-p1').innerHTML=planHTML('p1');
 document.getElementById('v-p2').innerHTML=planHTML('p2');
-document.getElementById('v-task').innerHTML=`<div class="seg"><div class="in"><button class="on" data-p="t1">🎯 任务</button><button data-p="t2">👥 分工</button><button data-p="t4">🎒 携带</button><button data-p="t3">☑️ 清单</button></div></div>
+document.getElementById('v-task').innerHTML=`<div class="seg"><div class="in"><button class="on" data-p="t1">🎯 任务</button><button data-p="t2">👥 分工</button><button data-p="t5">🎬 视频</button><button data-p="t4">🎒 携带</button><button data-p="t3">☑️ 清单</button></div></div>
 <div class="pane on task" data-p="t1">
  <div class="card"><div class="pad"><span class="badge">01 必做</span><b>寻找你的颜色</b><p>3 个场景各拍 3 张黄色，共 9 张，统一竖图拼九宫格；黄色占画面 ≥ 1/3。</p></div></div>
  <div class="card"><div class="pad"><span class="badge">02 必做</span><b>尝一口厦门</b><p>黄则和花生汤（中山路总店），店名带「黄」。点评：⭐ 评分 + 颜值 + 口感 + 一句话 + 适合谁。</p></div></div>
  <div class="card"><div class="pad"><span class="badge">03 必做</span><b>我们的厦门时刻</b><p>白城沙滩，<b>17:29 日落前</b>拍：借位托夕阳 / 逆光起跳 / 躺拼「黄」字俯拍；日落后沙上写「阳光黄」。路上先定 1 主 1 备。</p></div></div>
  <div class="card"><div class="pad"><span class="badge o">04 选做</span><b>发现隐藏宝藏</b><p>方案一：沙坡尾独立小店 / 老渔港；方案二：局口街老巷。照片 + 3 句推荐理由。</p></div></div>
- <div class="card"><div class="pad"><span class="badge o">05 选做</span><b>15 秒厦门</b><p>骑楼走入 → 喝汤比赞 → 涂鸦/隧道转场 → 黄色快闪 → 沙滩起跳 + 字幕「阳光黄 ☀️」。17:45 开剪。</p></div></div>
+ <div class="card"><div class="pad"><span class="badge o">05 选做</span><b>15 秒厦门</b><p>骑楼走入 → 喝汤比赞 → 涂鸦/隧道转场 → 黄色快闪 → 沙滩起跳 + 字幕「阳光黄 ☀️」。详细分镜见上方「🎬 视频」。</p></div></div>
 </div>
 <div class="pane" data-p="t2"><div class="card">
  <div class="mem"><b>逍杰 · 组长</b><span>统筹计时、带路、汇总提交</span></div>
@@ -242,6 +242,28 @@ document.getElementById('v-task').innerHTML=`<div class="seg"><div class="in"><b
  <div class="mem"><b>明城 · 摄影 B</b><span>05 视频拍摄与剪辑</span></div>
  <div class="mem"><b>寇森 · 探店官</b><span>04 隐藏宝藏 + 03 合影构图</span></div>
 </div></div>
+<div class="pane" data-p="t5">
+ <div class="note y">🎬 <b>15 秒厦门</b>：5 个镜头 × 3 秒，全程<b>竖屏 4K/1080p 30fps</b>。负责人：<b>明城</b>（拍 + 剪），其他人轮流入镜。每个镜头<b>多拍 2–3 条、每条 5 秒</b>，剪的时候挑最好的 3 秒。</div>
+ <div class="h">📋 分镜（方案一 · 沙坡尾）</div>
+ <div class="card">${[
+  ['0–3s','出发','15:30 鹭江道','5 人背影并排走，镜头跟在身后低机位；走到中山路口转身向镜头挥手','跟拍、手机贴近腰部高度，走稳一点'],
+  ['3–6s','尝一口','15:50 黄则和','花生汤碗俯拍特写 → 一人舀一勺入口 → 对镜头比 👍','先拍 2 秒特写，再拍 3 秒吃 + 比赞'],
+  ['6–9s','转场','16:35 沙坡尾涂鸦墙','5 人依次从画面右侧走入、每人一个手势（比心 / 耶 / 指黄色），镜头固定','三脚架固定机位，每人 1 秒，剪成快切'],
+  ['9–12s','黄色快闪','全程随手拍','黄色元素 1 秒一个：骑楼外墙 → 芒果摊 → 涂鸦 → 黄色帽子 → 夕阳','每样拍 2 秒近景，后期 0.5–1 秒卡点'],
+  ['12–15s','结尾','17:15 白城沙滩','逆光对着太阳，5 人同时起跳（剪影）→ 慢动作 → 字幕「阳光黄 ☀️」','用「慢动作」模式拍，3 人喊口号「1-2-3」再跳']
+ ].map(([t,n,w,v,h])=>`<div class="leg"><div class="ic" style="font-size:12px;font-weight:800">${t}</div><div><div class="t">${n} <span style="font-size:12px;color:var(--red)">${w}</span></div><div class="r">${v}</div><div class="d">📌 ${h}</div></div></div>`).join('')}</div>
+ <div class="h">🏫 方案二 · 厦大版替换</div>
+ <div class="card"><div class="pad" style="font-size:14px"><b>6–9s 转场</b> 换成：<b>芙蓉隧道</b>（16:50），5 人从隧道深处走向镜头，镜头放在地面低机位仰拍，涂鸦墙做两侧背景。<br><b>9–12s 快闪</b> 加入：芙蓉湖黑天鹅 / 颂恩楼倒影 1 秒。<br>其余镜头不变，结尾在白城沙滩 17:10–17:29 拍。</div></div>
+ <div class="h">✂️ 17:45 剪辑（10 分钟出片）</div>
+ <div class="card chk">${[
+  ['剪映 → 「一键成片」或搜「卡点 旅行 15 秒」模板（提前选好）','v0'],
+  ['按分镜顺序导入 5–8 段素材','v1'],
+  ['每段裁到 2–3 秒，跟音乐鼓点卡点','v2'],
+  ['结尾加字幕「阳光黄 ☀️ 厦门 2026.10.30」','v3'],
+  ['导出 1080p，发组长提交','v4']
+ ].map(([t,k])=>`<label><input type="checkbox" data-k="${k}">${t}</label>`).join('')}</div>
+ <div class="note y">💡 小技巧：拍视频时<b>先录后动</b>（开始录 1 秒后再走 / 跳），方便剪辑；逆光剪影时<b>点按太阳锁定曝光</b>再下拉调暗；手机开「网格线」保持水平。</div>
+</div>
 <div class="pane" data-p="t4">
  <div class="card"><div class="pad"><b>☀️ 10.30 周五 · 厦门天气</b>
   <div class="wx"><div><i>☀️</i><b>晴</b><span>降水 0%</span></div><div><i>🌡</i><b>25–27°C</b><span>傍晚 24°C</span></div><div><i>🌬</i><b>3 级风</b><span>海边傍晚凉</span></div><div><i>🕶</i><b>紫外线强</b><span>UV 6.6</span></div><div><i>🌅</i><b>17:29</b><span>日落</span></div></div>
